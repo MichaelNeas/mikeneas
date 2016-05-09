@@ -5,11 +5,17 @@
     var angVenture = angular.module('angVenture', ['ngRoute']);
 
     // configure our routes
-    angVenture.config(function($routeProvider) {
+    angVenture.config(function($routeProvider, $locationProvider) {
         $routeProvider
 
-            // route for the home page
+            // route for the index page
             .when('/', {
+                templateUrl : 'pages/home.html',
+                controller  : 'mainController'
+            })
+
+            // route for the index page
+            .when('/home', {
                 templateUrl : 'pages/home.html',
                 controller  : 'mainController'
             })
@@ -25,6 +31,9 @@
                 templateUrl : 'pages/contact.html',
                 controller  : 'contactController'
             });
+
+            // use the HTML5 History API
+       		$locationProvider.html5Mode(true);
     });
 
     // create the controller and inject Angular's $scope
