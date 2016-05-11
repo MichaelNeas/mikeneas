@@ -26,6 +26,18 @@
                 controller  : 'aboutController'
             })
 
+            //projects
+            .when('/projects', {
+                templateUrl : 'pages/projects.html',
+                controller  : 'projectController'
+            })
+
+            // route for the resume page
+            .when('/resume', {
+                templateUrl : 'pages/resume.html',
+                controller  : 'resumeController'
+            })
+
             // route for the contact page
             .when('/contact', {
                 templateUrl : 'pages/contact.html',
@@ -39,13 +51,21 @@
     // create the controller and inject Angular's $scope
     angVenture.controller('mainController', function($scope) {
         // create a message to display in our view
-        $scope.message = 'Everyone come and see how good I look!';
+        $scope.message = 'Site currently under construction';
     });
 
     angVenture.controller('aboutController', function($scope) {
         $scope.message = 'Look! I am an about page.';
     });
 
+    angVenture.controller('projectController', function($scope) {
+        $scope.message = 'All da projects';
+    });
+
+    angVenture.controller('resumeController', function($scope) {
+        $scope.message = 'Resume';
+    });
+
     angVenture.controller('contactController', function($scope) {
-        $scope.message = 'Contact us! JK. This is just a demo.';
+        $scope.message = 'Contact stuffs';
     });
