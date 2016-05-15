@@ -2,7 +2,7 @@
 A Personal Website of everything!
 
 #Technologies
-1. Nav Bar 
+1. Nav Bar Functionality
   - Angular 1.4.7 && Angular-route
   - Tested with python http server
     - python -m SimpleHTTPServer [port]
