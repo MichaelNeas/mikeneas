@@ -1,3 +1,4 @@
+/*Custom Text*/
 h1{
 	color:#55C8FF;
 }
@@ -8,4 +9,9 @@ nav {
 
 .white {
 	color: white;
+}
+
+/*Bootstrap Class Overrides*/
+.jumbotron {
+   opacity: 0.7;
 }

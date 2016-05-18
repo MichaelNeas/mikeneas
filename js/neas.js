@@ -63,9 +63,6 @@
 
     angVenture.controller('aboutController', function($scope) {
         $scope.message = 'Look! I am an about page.';
-        $scope.bodyStyles ={
-            "background-color": "coral"
-        }
     });
 
     angVenture.controller('projectController', function($scope) {
