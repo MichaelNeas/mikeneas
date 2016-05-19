@@ -52,13 +52,7 @@
     angVenture.controller('mainController', function($scope) {
         // create a message to display in our view
         $scope.message = 'Site currently under construction =)';
-        $scope.bodyStyles ={
-            "background": "url(../images/bluesaybrook.jpg) no-repeat center center fixed", 
-            "-webkit-background-size": "cover",
-            "-moz-background-size": "cover",
-            "-o-background-size": "cover",
-            "background-size": "cover"
-        }
+    
     });
 
     angVenture.controller('aboutController', function($scope) {

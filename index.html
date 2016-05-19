@@ -13,7 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="./js/neas.js"></script>
 </head>
-<body ng-controller="mainController" ng-style="bodyStyles">
+<body ng-class="currentBackground" ng-init="currentBackground = 'homeBackground'" ng-controller="mainController">
     <header>
         <nav class="navbar navbar-inverse navbar-static-top">
 	        <div class="container-fluid">
@@ -22,14 +22,14 @@
 						<span class = "sr-only">Toggle navigation</span>
 						<span class = "glyphicon glyphicon-tint white"></span>
 					</button>
-					<a class="navbar-brand" href="home">Mike Neas <small>Always Learning</small></a>
+					<a class="navbar-brand" ng-click="currentBackground = 'homeBackground'" href="home">Mike Neas <small>Always Learning</small></a>
 				</div>
 	            <div class="navbar-collapse collapse">
 		            <ul class="nav navbar-nav navbar-right">
-		                <li><a href="about">About</a></li>
-		                <li><a href="projects">Projects</a></li>
-		                <li><a href="resume">Resume</a></li>
-		                <li><a href="contact">Contact</a></li>
+		                <li><a ng-click="currentBackground = 'homeBackground'" href="about">About</a></li>
+		                <li><a ng-click="currentBackground = 'projectBackground'" href="projects">Projects</a></li>
+		                <li><a ng-click="currentBackground = 'resumeBackground'" href="resume">Resume</a></li>
+		                <li><a ng-click="currentBackground = 'contactBackground'" href="contact">Contact</a></li>
 		            </ul>
 		        </div>
 	        </div>
