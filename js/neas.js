@@ -1,13 +1,16 @@
 // neas.js
 
     // create the module and name it angVenture
+
         // also include ngRoute for all our routing needs
+
+
     var angVenture = angular.module('angVenture', ['ngRoute']);
 
     // configure our routes
     angVenture.config(function($routeProvider, $locationProvider) {
+        
         $routeProvider
-
             // route for the index page
             .when('/', {
                 templateUrl : 'pages/home.html',
@@ -42,10 +45,17 @@
             .when('/contact', {
                 templateUrl : 'pages/contact.html',
                 controller  : 'contactController'
-            });
+            })
+
+            
+
+              $locationProvider.html5Mode({
+                 enabled: true,
+                 requireBase: true
+                });
 
             // use the HTML5 History API
-       		$locationProvider.html5Mode(true);
+       
     });
 
     // create the controller and inject Angular's $scope
@@ -70,3 +80,4 @@
     angVenture.controller('contactController', function($scope) {
         $scope.message = 'Contact stuffs';
     });
+

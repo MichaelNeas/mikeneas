@@ -16,6 +16,16 @@ nav {
    opacity: 0.7;
 }
 
+/*Background images for pages*/
+
+.aboutBackground {
+	background: url(../images/osbeach.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+}
+
 .homeBackground {
 	background: url(../images/bluesaybrook.jpg) no-repeat center center fixed; 
             -webkit-background-size: cover;
