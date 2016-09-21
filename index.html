@@ -1,45 +1,22 @@
 <!doctype html>
-<html lang="en" ng-app="angVenture">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<!--Pretty URLs -->
 	<base href="/" />
 	<title>Mike Neas</title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/neasy.css">
-	<script src="/js/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="/js/neas.js"></script>
-
 </head>
-<body ng-class="currentBackground" ng-init="currentBackground = 'homeBackground'" ng-controller="mainController">
+<body>
 	<header>
-		<nav class="navbar navbar-inverse navbar-static-top">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class = "sr-only">Toggle navigation</span>
-						<span class = "glyphicon glyphicon-tint white"></span>
-					</button>
-					<a class="navbar-brand" ng-click="currentBackground = 'homeBackground'" href="home">Mike Neas <small>Always Learning</small></a>
-				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a ng-click="currentBackground = 'aboutBackground'" href="about">About</a></li>
-						<li><a ng-click="currentBackground = 'projectBackground'" href="projects">Projects</a></li>
-						<li><a ng-click="currentBackground = 'resumeBackground'" href="resume">Resume</a></li>
-						<li><a ng-click="currentBackground = 'contactBackground'" href="contact">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+		Mike Neas, Always Learning
 	</header>
-
-	<div id="main">
-		<div ng-view></div>
-	</div>
-	
+	<nav>
+	</nav>
+	<main>
+	</main>
+	<footer>
+	</footer>
 </body>
 </html>
