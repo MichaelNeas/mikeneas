@@ -1,1 +1,35 @@
 /*Custom Text*/
+body{
+      background-image: url(../assets/images/bluesaybrook.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+}
+
+header{
+      background-color: black;
+      width: 100%;
+      height: 5em;
+      padding-top: 1em;
+      padding-left:  1em;
+}
+
+
+/*Typefaces*/
+@font-face {
+    font-family: 'Walkway'; /*a name to be used later*/
+    src: url('../assets/Walkway/Walkway_SemiBold.ttf'); /*URL to font*/
+}
+
+h1{
+      font-family: Walkway, Arial, Helvetica, sans-serif;
+      font-size: 2.5em;
+      color: white;
+      margin-top: 0;
+}
+
+h2{
+      font-family: Walkway, Arial, Helvetica, sans-serif;
+      font-size: 2em;
+      color: white;
+}
