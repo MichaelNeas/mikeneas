@@ -7,6 +7,7 @@ body{
 }
 
 header{
+      float: left;
       background: black; /* For browsers that do not support gradients */
       background: -webkit-linear-gradient(bottom,rgba(0,0,0,0),rgba(0,0,0,1)); /*Safari 5.1-6*/
       background: -o-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,1)); /*Opera 11.1-12*/
@@ -18,7 +19,7 @@ header{
 }
 
 nav{  
-      margin-top: -3em;
+      float: right;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -29,21 +30,30 @@ nav{
       -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
       justify-content: space-around;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-align-content: center;
-      -ms-flex-line-pack: center;
-      align-content: center;
+      -webkit-box-align: right;
+      -webkit-align-items: right;
+      -ms-flex-align: right;
+      align-items: right;
+      -webkit-align-content: right;
+      -ms-flex-line-pack: right;
+      align-content: right;
 }
-
+main{
+      clear: both;
+      height: 60vh;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+}
 #middle-text{
+      text-align: center;
       color: white;
       font-family:  Walkway-UltraBold, Arial, Helvetica;
       font-size: 6em;
       margin: 0 auto;
-      text-align: center;
       width: 50%;
 }
 
@@ -94,9 +104,8 @@ footer{
       -moz-appearance: none;
       appearance: none;
       background-color: transparent;
-      border: 2px solid #e74c3c;
-      border-radius: 0.6em;
-      color: #e74c3c;
+      border: 2px solid #f0fbfd;
+      color: #f0fbfd;
       cursor: pointer;
       display: -webkit-box;
       display: -webkit-flex;
@@ -108,8 +117,8 @@ footer{
       font-size: 1em;
       font-weight: 400;
       line-height: 1;
-      margin: 20px;
-      padding: 1.2em 2.8em;
+      margin-right: 1em;
+      padding: .9em 2.6em;
       text-decoration: none;
       text-align: center;
       font-family: 'Walkway', Arial;
@@ -120,7 +129,6 @@ footer{
 }
 
 .navbutton {
-  border-radius: 3em;
   border-color: #f0fbfd;
   color: #f0fbfd;
   background-image: -webkit-linear-gradient(top, transparent 50%, #f0fbfd 50%);
@@ -148,7 +156,8 @@ footer{
 }
 
 h1{
-      color: white;
+      float: left;
+      color: #f0fbfd;
       font-family: Walkway, Arial, Helvetica, sans-serif;
       font-size: 2.5em;
       margin-top: 0em;
@@ -156,7 +165,7 @@ h1{
 }
 
 h2{
-      color: white;
+      color: #f0fbfd;
       font-family: Walkway, Arial, Helvetica, sans-serif;
       font-size: 2em;
 }
