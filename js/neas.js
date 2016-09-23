@@ -34,11 +34,11 @@
 
     function getContent(fragmentId, callback){
         if(loadedPageCache[fragmentId]){
-            callback(partialsCache[fragmentId]);
+            callback(loadedPageCache[fragmentId]);
         } else{
             var path = "pages/" + fragmentId + ".html";
             fetchFile(path, function (content){
-                partialsCache[fragmentId] = content;
+                loadedPageCache[fragmentId] = content;
                 callback(content);
             });
         }
