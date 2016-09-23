@@ -69,6 +69,10 @@ footer{
       width: 100%;     
 }
 
+a{
+  text-decoration: none;
+}
+
 /*Animations*/
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -143,7 +147,9 @@ footer{
   background-position: 0 100%;
 }
 
-
+#activeButton{
+  background-color: green;
+}
 /*Typefaces*/
 @font-face {
       font-family: 'Walkway'; /*a name to be used later*/
