@@ -175,3 +175,9 @@ h2{
       font-family: Walkway, Arial, Helvetica, sans-serif;
       font-size: 2em;
 }
+
+/*Images*/
+#circleme{
+  width: 200px;
+  border-radius: 15px;
+}
