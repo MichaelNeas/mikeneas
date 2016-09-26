@@ -53,6 +53,7 @@
             mainContent.innerHTML = content;
         });
         setActiveLink(fragmentId);
+        document.body.style.backgroundColor="tomato";
     }
 
     //if no location hash, send em home
