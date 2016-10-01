@@ -1,9 +1,28 @@
 /*Custom Text*/
 body{
-      background-image: url(../assets/images/underthebridge.jpeg);
       background-repeat: no-repeat;
       background-size: cover;
-      margin: 0em;
+      margin: 0;
+}
+
+#landingBackground{
+      background-image: url('../assets/images/underthebridge.jpeg');
+}
+
+#aboutBackground{
+      background-image: url('../assets/images/osbeach.jpg');
+}
+
+#developmentBackground{
+      background: black;
+}
+
+#fitnessBackground{
+      background: #22A7F0;
+}
+
+#adventureBackground{
+      background-image: url('../assets/images/nojumping.jpg');
 }
 
 header{

@@ -20,6 +20,26 @@
         }
     }
 
+    function setBackground(fragmentId){
+        console.log(fragmentId);
+        switch(fragmentId){
+            case 'fitness':
+                document.body.id = 'fitnessBackground';
+                break;
+            case 'about':
+                document.body.id= 'aboutBackground';
+                break;
+            case 'adventure':
+                document.body.id = 'adventureBackground';
+                break;
+            case 'development':
+                document.body.id = 'developmentBackground';
+                break;
+            default:
+                document.body.id = 'landingBackground';
+        }
+    }
+
     function fetchFile(path, callback){
         //ajax request
         var request = new XMLHttpRequest();
@@ -53,6 +73,7 @@
             mainContent.innerHTML = content;
         });
         setActiveLink(fragmentId);
+        setBackground(fragmentId)
     }
 
     //if no location hash, send em home
