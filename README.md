@@ -1,5 +1,3 @@
 # mikeneas.com
-A Personal Website of everything!
+A Personal Website completely implemented from scratch... in progress currently.
 
-#Technologies
-I wanted to make my website from scratch, without all the bloated frameworks 
