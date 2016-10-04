@@ -21,7 +21,7 @@
     }
 
     function setBackground(fragmentId){
-        console.log(fragmentId);
+        //console.log(fragmentId);
         switch(fragmentId){
             case 'fitness':
                 document.body.id = 'fitnessBackground';
