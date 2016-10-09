@@ -62,9 +62,13 @@ nav{
     -ms-flex-line-pack: right;
     align-content: right;
 }
+
 main{
     clear: both;
-    height: 60vh;
+}
+
+.landinganimation{
+    height: 50vh;
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
@@ -72,6 +76,21 @@ main{
     -webkit-justify-content: center;
     justify-content: center;
 }
+
+.flextechnologies{
+    height: 60vh;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: space-around;
+  align-content: space-around;
+}
+
 #middle-text{
     text-align: center;
     color: white;
