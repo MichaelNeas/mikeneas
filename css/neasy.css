@@ -67,8 +67,8 @@ main{
 }
 
 .aboutflexing{
-    background-color: rgba(0,0,0,0.4);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -98,30 +98,58 @@ main{
 }
 
 .flextechnologies{
-    height: 60vh;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: center;
-  align-content: center;
+    height: 65vh;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+.flexventures{
+    border: 1px solid #f0fbfd;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.7);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: space-around;
+    align-content: space-around;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 4em;
+}
+
+.flexventures li{
+    color: white;
 }
 
 .fitnessflexer{
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: center;
-  align-content: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: space-around;
+    align-content: space-around;
 }
 
 #middle-text{
@@ -141,11 +169,12 @@ main{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: rgba(127, 131, 255, 0.7);
+    margin: 1em;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
 }
 
 /* Add some padding inside the card container */
@@ -260,9 +289,15 @@ a{
 }
 
 p{
-  font-family: 'Roboto', sans-serif;
-  color: #000000;
-  font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    color: #3dc5c7;
+    font-weight: 100;
+}
+li{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-weight: 100;
 }
 
 h1{
