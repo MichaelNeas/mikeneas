@@ -258,7 +258,7 @@ a{
     outline: 0;
 }
 
-    .navbutton {
+.navbutton {
     border-color: #f0fbfd;
     color: #f0fbfd;
     background-image: -webkit-linear-gradient(top, transparent 50%, #f0fbfd 50%);
@@ -320,4 +320,13 @@ h2{
 #circleme{
     width: 200px;
     border-radius: 15px;
+}
+
+/*Hover info*/
+.techinfo{
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    display: none;
+    position:fixed;
 }
