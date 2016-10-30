@@ -4,9 +4,13 @@
 
 function displayInformation(aye){
 	console.log(aye);
+    aye.height *= 1.5;
+    aye.width *= 1.5;
     aye.nextElementSibling.style.display = "block";
     aye.onmouseleave = (function(){
         aye.nextElementSibling.style.display = "none";
+        aye.height /= 1.5;
+        aye.width /= 1.5;
     })
 }
 

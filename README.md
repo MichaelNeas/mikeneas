@@ -10,3 +10,5 @@ A Personal Website completely implemented from scratch... in progress currently.
 #####Local Server
 ```python -m SimpleHTTPServer 8000```
 
+#####To DO:
+	* SVG for dev page
