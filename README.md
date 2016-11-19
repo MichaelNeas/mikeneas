@@ -12,3 +12,4 @@ A Personal Website completely implemented from scratch... in progress currently.
 
 #####To DO:
 	* SVG for dev page
+	* Showcase
