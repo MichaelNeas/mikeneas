@@ -30,7 +30,6 @@ body{
 }
 
 header{
-    float: left;
     background: black; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(bottom,rgba(0,0,0,0),rgba(0,0,0,1)); /*Safari 5.1-6*/
     background: -o-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,1)); /*Opera 11.1-12*/
@@ -39,10 +38,18 @@ header{
     height: 8em;
     padding-top: 1em;
     width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+     flex-direction: row;
+    -webkit-align-content: space-between;
+    align-content: space-between;
+}
+header div{
+    width: 50%;
 }
 
 nav{  
-    float: right;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -51,15 +58,13 @@ nav{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    -webkit-box-align: right;
-    -webkit-align-items: right;
-    -ms-flex-align: right;
-    align-items: right;
-    -webkit-align-content: right;
-    -ms-flex-line-pack: right;
-    align-content: right;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+    width: 50%;
+    height: 3em;
 }
 
 main{
@@ -67,7 +72,7 @@ main{
 }
 
 .aboutflexing{
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,.78);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     display: -webkit-flex;
     display: flex;
@@ -85,6 +90,33 @@ main{
     margin-right: 10%;
     margin-left: 10%;
     padding: 1em;
+}
+
+.rowFlex{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+     flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-content: space-around;
+    align-content: space-around;
+}
+
+.aboutContent{
+    width: 100%;
+}
+
+.aboutContent p{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.aboutContent li{
+    color: #75afec;
+    margin-left: .5rem;
 }
 
 .landinganimation{
@@ -206,6 +238,7 @@ footer{
 a{
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /*Animations*/
@@ -300,7 +333,7 @@ a{
 
 p{
     font-family: 'Roboto', sans-serif;
-    color: #3dc5c7;
+    color: #75afec;
     font-weight: 100;
 }
 li{
@@ -311,7 +344,7 @@ li{
 }
 
 h1{
-    float: left;
+    
     color: #f0fbfd;
     font-family: Walkway, Arial, Helvetica, sans-serif;
     font-size: 2.5em;
@@ -329,6 +362,8 @@ h2{
 #circleme{
     width: 200px;
     border-radius: 15px;
+    margin-right: 2em;
+    margin-top: 2em;
 }
 
 /*Hover info*/
