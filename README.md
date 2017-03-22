@@ -14,3 +14,4 @@ A Personal Website completely implemented from scratch... in progress currently.
 	* SVG for dev page
 	* Make a more centralized hover thingy for the dev page
 	* Need that mobile friendly UI
+	* Showcase
