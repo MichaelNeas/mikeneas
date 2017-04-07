@@ -46,7 +46,7 @@ header{
     align-content: space-between;
 }
 header div{
-    width: 50%;
+    width: 60%;
 }
 
 nav{  
@@ -63,7 +63,7 @@ nav{
     align-items: flex-start;
     -webkit-align-content: flex-start;
     align-content: flex-start;
-    width: 50%;
+    width: 35%;
     height: 3em;
 }
 

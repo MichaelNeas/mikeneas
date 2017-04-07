@@ -11,7 +11,10 @@ A Personal Website completely implemented from scratch... in progress currently.
 ```python -m SimpleHTTPServer 8000```
 
 #####To DO:
-	* SVG for dev page
-	* Make a more centralized hover thingy for the dev page
-	* Need that mobile friendly UI
-	* Showcase
+	- SVG for dev page
+	- Make a more centralized hover thingy for the dev page
+	- Need that mobile friendly UI
+	- Showcase
+	1. Scroll down and move development to playing cards animation on home page would be cool
+	2. Life the next subsection
+	3. x showcase
