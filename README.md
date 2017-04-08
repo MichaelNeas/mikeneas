@@ -18,3 +18,4 @@ A Personal Website completely implemented from scratch... in progress currently.
 		- GRID INTERACTIVE CARDS YES
 	2. Life the next subsection
 	https://codepen.io/MichaelNeas/pen/MpdxvK
+	100 day challenge begins 
