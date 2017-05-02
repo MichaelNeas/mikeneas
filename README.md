@@ -19,3 +19,4 @@ A Personal Website completely implemented from scratch... in progress currently.
 	2. Life the next subsection
 	https://codepen.io/MichaelNeas/pen/MpdxvK
 	3. Prallax scrolling (this week)
+	4. Cool mountain picture scrolly
