@@ -14,8 +14,8 @@ A Personal Website completely implemented from scratch... in progress currently.
 	- SVG for dev page
 	- Make a more centralized hover thingy for the dev page
 	- Need that mobile friendly UI
+	- Scss
 	1. Scroll down and move development to playing cards animation on home page would be cool
 		- GRID INTERACTIVE CARDS YES
 	2. Life the next subsection
 	https://codepen.io/MichaelNeas/pen/MpdxvK
-	100 day challenge begins 
