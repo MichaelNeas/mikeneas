@@ -15,12 +15,12 @@ body{
 
 @font-face {
     font-family: 'Walkway'; /*a name to be used later*/
-    src: url('../assets/Walkway/Walkway_SemiBold.ttf'); /*URL to font*/
+    src: url('../../assets/Walkway/Walkway_SemiBold.ttf'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'Walkway-UltraBold';
-    src:  url('../assets/Walkway/Walkway_UltraBold.ttf');
+    src:  url('../../assets/Walkway/Walkway_UltraBold.ttf');
 }
 
 p {

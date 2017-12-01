@@ -1,0 +1,25 @@
+{
+  "name": "mikeneas",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel -w src/js -d dist/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelNeas/mikeneas.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Mike Neas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelNeas/mikeneas/issues"
+  },
+  "homepage": "http://www.mikeneas.com",
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
