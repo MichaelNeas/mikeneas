@@ -1,0 +1,58 @@
+#aboutBackground{
+    background-image: url('../assets/images/osbeach.jpg');
+}
+
+#circleme {
+    width: 200px;
+    border-radius: 15px;
+    margin-right: 2em;
+    margin-top: 2em;
+}
+
+.aboutflexing {
+    background-color: rgba(0,0,0,.78);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-content: space-around;
+    align-content: space-around;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    margin-bottom: 10em;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 1em;
+}
+
+.rowFlex {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-content: space-around;
+    align-content: space-around;
+}
+
+.aboutContent{
+    width: 100%;
+}
+
+.aboutContent p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.aboutContent li {
+    color: #75afec;
+    margin-left: .5rem;
+}

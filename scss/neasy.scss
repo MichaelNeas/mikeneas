@@ -1,0 +1,94 @@
+/*neasy.scss generates neasy.css*/
+body{
+    background-repeat:no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position:center center;
+    background-attachment:fixed;
+    margin:  0;
+}
+
+/*Typefaces*/
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+@font-face {
+    font-family: 'Walkway'; /*a name to be used later*/
+    src: url('../assets/Walkway/Walkway_SemiBold.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Walkway-UltraBold';
+    src:  url('../assets/Walkway/Walkway_UltraBold.ttf');
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #75afec;
+    font-weight: 100;
+}
+li {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-weight: 100;
+}
+
+h1 {
+    color: #f0fbfd;
+    font-family: Walkway, Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    margin-top: 0em;
+    margin-left: 1em;
+}
+
+h2 {
+    color: #f0fbfd;
+    font-family: Walkway, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Text Animations*/
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  
+    -webkit-animation:fadeIn ease-in 1;  
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+}
+
+.fade-in.main {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay:.3s;
+    animation-delay: .3s;
+}
+
+
+@import 'header';
+@import 'nav-buttons';
+@import 'nav-burger';
+@import 'skill-cards';
+@import 'neas-home';
+@import 'neas-about';
+@import 'flexbox';
+@import 'footer';
+@import 'media-queries';

@@ -10,6 +10,9 @@ A Personal Website completely implemented from scratch... in progress currently.
 ##### Local Server
 ```python -m SimpleHTTPServer 8000```
 
+#### scss -> css
+```sass --watch scss/:css/```
+
 ##### To DO:
 	- SVG for dev page
 	- Make a more centralized hover thingy for the dev page

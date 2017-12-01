@@ -1,0 +1,66 @@
+#developmentBackground{
+    background-image: url('../assets/images/ogDesk.jpg');
+}
+
+#fitnessBackground{
+    background-image: url('../assets/images/saltfresh.jpg');
+}
+
+#adventureBackground{
+    background-image: url('../assets/images/nojumping.jpg');
+}
+
+.flextechnologies{
+    height: 65vh;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+.flexventures{
+    border: 1px solid #f0fbfd;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.7);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: space-around;
+    align-content: space-around;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 4em;
+}
+
+.flexventures li{
+    color: white;
+}
+
+.fitnessflexer{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: space-around;
+    align-content: space-around;
+}

@@ -1,0 +1,84 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: rgba(127, 131, 255, 0.7);
+    margin: 1em;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+    padding: 2px 16px;
+}
+
+
+.card-container {
+    display:grid;
+    grid-template-columns: 10% 80% 10%;
+    align-content: center;
+    margin:0 auto;
+    width: 16rem;
+    height:21rem;
+    border-radius: 1rem;
+    background-color:white;
+    box-shadow: 0 0 0 .07rem black;
+    position: relative;
+    top: 0;
+    transition: transform ease 0.5s;
+    -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+}
+
+.card-container:hover {
+    -ms-transform: rotate(0deg) translateY(-2em);
+    -webkit-transform: rotate(0deg) translateY(-2em); 
+    transform: rotate(0deg) translateY(-2em);
+}
+
+.face{
+    width: 100%;
+    height: 20rem;
+    background: url("https://lauterry.github.io/slides-prez-angular/img/angularjs.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+}
+
+.logo{
+    background: url(https://angularjs.org/img/ng-conf-logo.png);
+    background-size: cover;
+    background-position: center;
+    width:80%;
+    height:1.5rem;
+}
+.logo:nth-child(1){
+    justify-self: end;
+    align-self: start;
+}
+
+.logo:nth-child(3){
+    justify-self: start;
+    align-self:end;
+}
+
+/*Hover info*/
+.techinfo{
+    width: 400px;
+    height: 200px;
+    background-color: #f7df1e;
+    border: solid 1px;
+    display: none;
+    position:fixed;
+}

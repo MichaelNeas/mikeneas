@@ -1,0 +1,49 @@
+/*Buttons*/
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #f0fbfd;
+    color: #f0fbfd;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 1em;
+    padding: .9em 2.6em;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Walkway', Arial;
+}
+.btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.navbutton {
+    border-color: #f0fbfd;
+    color: #f0fbfd;
+    background-image: -webkit-linear-gradient(top, transparent 50%, #f0fbfd 50%);
+    background-image: linear-gradient(to bottom, transparent 50%, #f0fbfd 50%);
+    background-position: 0% 0%;
+    background-size: 210%;
+    -webkit-transition: background 150ms ease-in-out, color 150ms ease-in-out;
+    transition: background 150ms ease-in-out, color 150ms ease-in-out;
+    }
+    .navbutton:hover {
+    color: #1b392a;
+    background-position: 0 100%;
+    }
+
+    #activeButton{
+    background-color: #2980b9;
+}

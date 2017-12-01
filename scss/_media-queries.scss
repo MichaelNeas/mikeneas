@@ -1,0 +1,22 @@
+@media all and (max-width: 600px) {
+    #middle-text {
+        font-size: 2em;
+    }
+    .rowFlex{
+        flex-wrap: wrap-reverse;
+    }
+    .rowFlex #circleme {
+        margin: 0 auto;
+    }   
+    h1{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1.25em;
+    }
+}    
+@media all and (min-width: 600px) and (max-width:1050px) {
+    #middle-text {
+        font-size: 4em;
+    }   
+}   
