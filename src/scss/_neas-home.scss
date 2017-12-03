@@ -1,26 +1,52 @@
-#landingBackground{
+.header-image { 
     background-image: url('../../assets/images/underthebridge.jpeg');
+    position: relative;
+    height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    overflow: hidden;
+    z-index: 3;
 }
 
-main {
-    clear: both;
-}
-
-.landinganimation {
-    height: 50vh;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-}
-
-#middle-text {
+.header-logo {
     text-align: center;
     color: white;
     font-family:  Walkway-UltraBold, Arial, Helvetica;
-    font-size: 6em;
-    margin: 0 auto;
-    width: 50%;
+    font-size: 5.5em;
+    max-width: 640px;
+    width: 100%;
+    //background-color: tomato;
+    position: absolute;
+    top: 50%;
+    margin-top: -180px;
+    left: 50%;
+    margin-left: -320px;
 }
+
+.content{
+    padding: 100px 0;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 400px;
+    z-index: 2;
+    position: relative;
+    background: white;
+    width: 100%;
+}
+
+.window{
+    height: 640px;
+    width: 640px;
+    margin: 0 auto;
+    background-image: url("../../assets/images/nojumping.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+

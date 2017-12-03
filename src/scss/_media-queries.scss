@@ -1,5 +1,5 @@
 @media all and (max-width: 600px) {
-    #middle-text {
+    .header-logo {
         font-size: 2em;
     }
     .rowFlex{
@@ -16,7 +16,7 @@
     }
 }    
 @media all and (min-width: 600px) and (max-width:1050px) {
-    #middle-text {
+    .header-logo {
         font-size: 4em;
     }   
 }   

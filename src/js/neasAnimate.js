@@ -34,3 +34,11 @@ function setBackground(fragmentId){
             document.body.id = 'landingBackground';
     }
 }
+
+(function(){
+    window.addEventListener('scroll', function(){
+        const windowScroll = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        document.querySelector('.header-logo').style.transform = 
+        'translate(0px, '+windowScroll/8+ '%)';
+    });
+})();
