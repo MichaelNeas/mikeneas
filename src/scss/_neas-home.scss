@@ -1,5 +1,4 @@
-.header-image { 
-    background-image: url('../../assets/images/underthebridge.jpeg');
+@mixin expanded-parallax-images {
     position: relative;
     height: 600px; 
     background-attachment: fixed;
@@ -9,6 +8,15 @@
     background-position: top center;
     overflow: hidden;
     z-index: 3;
+}
+.header-image { 
+    background-image: url('../../assets/images/underthebridge.jpeg');
+    @include expanded-parallax-images;
+}
+
+.trailer-image { 
+    background-image: url('../../assets/images/famous.jpg');
+    @include expanded-parallax-images;
 }
 
 .header-logo {

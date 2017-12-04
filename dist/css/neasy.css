@@ -307,6 +307,18 @@ nav {
   overflow: hidden;
   z-index: 3; }
 
+.trailer-image {
+  background-image: url("../../assets/images/famous.jpg");
+  position: relative;
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  overflow: hidden;
+  z-index: 3; }
+
 .header-logo {
   text-align: center;
   color: white;
