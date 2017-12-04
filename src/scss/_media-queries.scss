@@ -1,6 +1,11 @@
 @media all and (max-width: 600px) {
     .header-logo {
         font-size: 2em;
+        margin-left: -210px;
+    }
+    .window{
+        height: 300px;
+        max-width: 300px;
     }
     .rowFlex{
         flex-wrap: wrap-reverse;

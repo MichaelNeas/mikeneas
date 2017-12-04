@@ -49,6 +49,12 @@ h2 {
     font-size: 2em;
 }
 
+h3 {
+    color: #000;
+    font-family: Walkway, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -89,6 +95,7 @@ a {
 @import 'skill-cards';
 @import 'neas-home';
 @import 'neas-about';
+@import 'neas-contact';
 @import 'flexbox';
 @import 'footer';
 @import 'media-queries';

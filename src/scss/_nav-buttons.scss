@@ -23,10 +23,10 @@
     text-decoration: none;
     text-align: center;
     font-family: 'Walkway', Arial;
-}
-.btn:hover, .btn:focus {
-    color: #fff;
-    outline: 0;
+    &:hover, &:focus{
+        color: #fff;
+        outline: 0;
+    }
 }
 
 .navbutton {
@@ -38,12 +38,8 @@
     background-size: 210%;
     -webkit-transition: background 150ms ease-in-out, color 150ms ease-in-out;
     transition: background 150ms ease-in-out, color 150ms ease-in-out;
+    &:hover{
+        color: #1b392a;
+        background-position: 0 100%;
     }
-    .navbutton:hover {
-    color: #1b392a;
-    background-position: 0 100%;
-    }
-
-    #activeButton{
-    background-color: #2980b9;
 }
