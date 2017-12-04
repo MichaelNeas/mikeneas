@@ -94,14 +94,15 @@ a {
     animation-delay: .3s;
 }
 
+.full-width{
+    width:100%;
+}
 
 @import 'header';
 @import 'nav-buttons';
 @import 'nav-burger';
 @import 'skill-cards';
 @import 'neas-home';
-@import 'neas-about';
 @import 'neas-contact';
-@import 'flexbox';
 @import 'footer';
 @import 'media-queries';

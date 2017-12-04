@@ -91,6 +91,9 @@ a {
   -moz-animation-delay: .3s;
   animation-delay: .3s; }
 
+.full-width {
+  width: 100%; }
+
 header {
   background: black;
   height: 4em;
@@ -147,6 +150,7 @@ nav {
   font-weight: 400;
   line-height: 1;
   margin-right: 1em;
+  margin-left: 1em;
   padding: .9em 2.6em;
   text-decoration: none;
   text-align: center;
@@ -357,59 +361,6 @@ nav {
   max-width: 640px;
   margin: 0 auto; }
 
-#aboutBackground {
-  background-image: url("../../assets/images/osbeach.jpg"); }
-
-#circleme {
-  width: 200px;
-  border-radius: 15px;
-  margin-right: 2em;
-  margin-top: 2em; }
-
-.aboutflexing {
-  background-color: rgba(0, 0, 0, 0.78);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: space-around;
-  align-content: space-around;
-  -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
-  margin-bottom: 10em;
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-top: 120px;
-  padding: 1em; }
-
-.rowFlex {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: space-around;
-  align-content: space-around; }
-
-.aboutContent {
-  width: 100%; }
-
-.aboutContent p {
-  margin-left: 3rem;
-  margin-right: 3rem; }
-
-.aboutContent li {
-  color: #75afec;
-  margin-left: .5rem; }
-
 .bouncy-button {
   background: #3498db;
   width: 180px;
@@ -437,66 +388,6 @@ nav {
     background-color: #927608;
     opacity: 0.4;
     bottom: -30px; }
-
-#developmentBackground {
-  background-image: url("../../assets/images/ogDesk.jpg"); }
-
-#fitnessBackground {
-  background-image: url("../../assets/images/saltfresh.jpg"); }
-
-#adventureBackground {
-  background-image: url("../../assets/images/nojumping.jpg"); }
-
-.flextechnologies {
-  height: 65vh;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: center;
-  align-content: center; }
-
-.flexventures {
-  border: 1px solid #f0fbfd;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: rgba(0, 0, 0, 0.7);
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: space-around;
-  align-content: space-around;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  padding: 1em;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 4em; }
-
-.flexventures li {
-  color: white; }
-
-.fitnessflexer {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: space-around;
-  align-content: space-around; }
 
 footer {
   background-color: black;
