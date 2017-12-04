@@ -47,6 +47,11 @@ h3 {
   font-family: Walkway, Arial, Helvetica, sans-serif;
   font-size: 2em; }
 
+h4 {
+  color: #000;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 1.3em; }
+
 a {
   color: white;
   text-decoration: none;
@@ -335,6 +340,10 @@ nav {
   background-size: cover;
   border-radius: 50%;
   margin-top: 100px; }
+
+.story-time {
+  max-width: 640px;
+  margin: 0 auto; }
 
 #aboutBackground {
   background-image: url("../../assets/images/osbeach.jpg"); }

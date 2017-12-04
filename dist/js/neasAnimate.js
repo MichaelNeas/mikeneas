@@ -62,7 +62,7 @@ function setBackground(fragmentId) {
         diff = diff - m * 60;
         let s = diff;
         if (window.location.hash === '#home') {
-            document.getElementById("time-elapsed").innerHTML = d + " day(s), " + h + " hour(s), " + m + " minute(s), " + s + " second(s) spent alive";
+            document.getElementById("time-elapsed").innerHTML = `<h4>${d} day(s), ${h} hour(s), ${m} minute(s), ${s} second(s) spent alive?</h4>`;
         }
     }
 
