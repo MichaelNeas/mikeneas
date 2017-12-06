@@ -3,6 +3,7 @@ function clickME(){
     let rightHalf = document.querySelector(".right-button");
     let leftHalf = document.querySelector(".left-button");
     let ballDroppy = document.querySelector("#ballDropper");
+    let download = document.querySelector(".download-button");
     let thankYou = document.querySelector(".thanks");
     buttoon.addEventListener("click", () => {
         buttoon.classList.add("animation");
@@ -10,8 +11,11 @@ function clickME(){
         leftHalf.classList.add("left-button-animation");
         ballDroppy.classList.add("appearance-animation");
         go();
+        download.classList.add("appearance-animation");
+    });
+    download.addEventListener("click", () => {
+        download.style.display = "none";
         thankYou.classList.add("appearance-animation");
-        setTimeout(()=>window.open('https://drive.google.com/file/d/1gIU1pbsLlXUH2fGxnEMWA98iopUyAbXJ/view?usp=sharing', '_blank'), 3000);
     });
 
     let ballDropper = document.querySelector("#ballDropper");

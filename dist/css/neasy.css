@@ -385,7 +385,7 @@ nav {
     height: 100%;
     border-radius: 0px 5px 5px 0px; }
 
-.bouncy-button {
+.bouncy-button, .download-button {
   text-align: center;
   background: IndianRed;
   width: 120px;
@@ -398,9 +398,12 @@ nav {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   border-radius: 5px; }
-  .bouncy-button:hover {
+  .bouncy-button:hover, .download-button:hover {
     cursor: pointer;
     background-color: #b85252; }
+
+.download-button {
+  visibility: hidden; }
 
 .animation {
   -webkit-animation-name: bounce;

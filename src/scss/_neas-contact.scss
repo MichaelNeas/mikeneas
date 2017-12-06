@@ -25,7 +25,7 @@
     }
 }
 
-.bouncy-button{
+@mixin buttonStyles{
     text-align: center;
     background: IndianRed;
     width: 120px;
@@ -43,6 +43,15 @@
         background-color: #b85252;
     }
 }
+
+.bouncy-button, .download-button{
+    @include buttonStyles;
+}
+
+.download-button{
+    visibility: hidden;
+}
+
 .animation{
     -webkit-animation-name: bounce;
     -webkit-animation-duration:1s;
