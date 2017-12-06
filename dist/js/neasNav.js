@@ -12,14 +12,13 @@
         //passing callback function for async calls
         getContent(fragmentId, function (content) {
             mainContent.innerHTML = content;
+            if (fragmentId === 'contact') clickME();
         });
         pageManipulations(fragmentId);
     }
 
     function getContent(fragmentId, callback) {
-        if (loadedPageCache[fragmentId]) {
-            callback(loadedPageCache[fragmentId]);
-        } else {
+        if (loadedPageCache[fragmentId]) callback(loadedPageCache[fragmentId]);else {
             let path = "pages/" + fragmentId + ".html";
             fetchFile(path, function (content) {
                 loadedPageCache[fragmentId] = content;
@@ -41,6 +40,7 @@
     }
 
     function pageManipulations(fragid) {
+
         setActiveLink(fragmentId);
         setBackground(fragmentId);
     }
@@ -54,11 +54,7 @@
         for (i = 0; i < links.length; i++) {
             link = links[i];
             pageName = link.getAttribute("href").substr(1);
-            if (pageName === fragmentId) {
-                link.setAttribute("id", "activeButton");
-            } else {
-                link.removeAttribute("id");
-            }
+            if (pageName === fragmentId) link.setAttribute("id", "activeButton");else link.removeAttribute("id");
         }
     }
 
