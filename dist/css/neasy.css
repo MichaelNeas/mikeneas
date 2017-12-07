@@ -99,7 +99,9 @@ header {
   height: 4em;
   padding-top: 1em;
   width: 100%;
+  display: -webkit-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
@@ -172,6 +174,7 @@ nav {
     color: #1b392a;
     background-position: 0 100%; }
 
+/*not used currently*/
 .hamburger-menu {
   position: absolute;
   top: 10px;
@@ -222,6 +225,7 @@ nav {
   transform: rotate(-45deg);
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
+/*not used currently*/
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -374,10 +378,11 @@ nav {
   padding: 25px;
   display: flex; }
   .broken-button .left-button {
+    visibility: hidden;
     width: 50%;
     background: IndianRed;
-    border-radius: 5px 0px 0px 5px;
-    visibility: hidden; }
+    height: 100%;
+    border-radius: 5px 0px 0px 5px; }
   .broken-button .right-button {
     visibility: hidden;
     width: 50%;

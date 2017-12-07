@@ -3,7 +3,9 @@ header{
     height: 4em;
     padding-top: 1em;
     width: 100%;
+    display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
