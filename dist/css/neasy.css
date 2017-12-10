@@ -132,7 +132,7 @@ nav {
   height: 3em; }
 
 /*Buttons*/
-.btn {
+.nav-btn {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -150,29 +150,24 @@ nav {
   align-self: center;
   font-size: 1em;
   font-weight: 400;
-  line-height: 1;
   margin-right: 1em;
   margin-left: 1em;
   padding: .9em 2.6em;
   text-decoration: none;
   text-align: center;
   font-family: 'Walkway', Arial; }
-  .btn:hover, .btn:focus {
-    color: #fff;
+  .nav-btn:hover, .nav-btn:focus {
     outline: 0; }
 
-.navbutton {
-  border-color: #f0fbfd;
-  color: #f0fbfd;
-  background-image: -webkit-linear-gradient(top, transparent 50%, #f0fbfd 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, #f0fbfd 50%);
-  background-position: 0% 0%;
+.navbutton-animation {
   background-size: 210%;
-  -webkit-transition: background 150ms ease-in-out, color 150ms ease-in-out;
-  transition: background 150ms ease-in-out, color 150ms ease-in-out; }
-  .navbutton:hover {
+  background-color: black;
+  -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+  color: #f0fbfd; }
+  .navbutton-animation:hover {
     color: #1b392a;
-    background-position: 0 100%; }
+    background-color: #f0fbfd; }
 
 /*not used currently*/
 .hamburger-menu {
@@ -486,7 +481,7 @@ canvas {
 footer {
   background-color: black;
   color: white;
-  padding: 40px 0;
+  padding: 30px 0;
   position: fixed;
   bottom: 0;
   width: 100%; }
