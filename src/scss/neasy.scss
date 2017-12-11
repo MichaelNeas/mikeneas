@@ -67,6 +67,10 @@ a {
     cursor: pointer;
 }
 
+.blue-text{
+    color: #007de7;
+}
+
 /*Text Animations*/
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

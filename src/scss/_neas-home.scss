@@ -19,6 +19,16 @@
     @include expanded-parallax-images;
 }
 
+.story-beginnings { 
+    background-image: url('../../assets/images/bluesaybrook.jpg');
+    @include expanded-parallax-images;
+}
+
+.story-middles { 
+    background-image: url('../../assets/images/saltfresh.jpg');
+    @include expanded-parallax-images;
+}
+
 .header-logo {
     text-align: center;
     color: white;
@@ -34,7 +44,7 @@
 }
 
 .content{
-    padding: 100px 0;
+    padding: 10px 0;
     text-align: center;
     margin: auto;
     margin-bottom: 400px;
@@ -44,18 +54,30 @@
     width: 100%;
 }
 
-.window{
+@mixin window-template{ 
     height: 640px;
     max-width: 640px;
     margin: 0 auto;
-    background-image: url("../../assets/images/nojumping.jpg");
-    background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     border-radius: 50%;
-    margin-top: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
+.window{
+    background-position: top center;
+    @include window-template;
+    background-image: url("../../assets/images/nojumping.jpg");
+}
+
+.window-fly{
+    background-position: bottom center;
+    @include window-template;
+    background-image: url("../../assets/me/dragonfly.jpg");
+}
+
 
 .story-time{
     max-width: 640px;

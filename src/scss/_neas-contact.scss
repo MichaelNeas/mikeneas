@@ -1,7 +1,9 @@
+$button-color: rgb(5, 108, 139);
+
 @mixin brokenButtons {
     visibility:hidden;
     width:50%;
-    background: IndianRed;
+    background: $button-color;
     height:100%;
 }
 
@@ -29,7 +31,7 @@
 
 @mixin buttonStyles{
     text-align: center;
-    background: IndianRed;
+    background: $button-color;
     width: 120px;
     padding: 25px;
     color: white;
@@ -42,7 +44,7 @@
     border-radius: 5px;
     &:hover{
         cursor: pointer;
-        background-color: #b85252;
+        background-color: rgb(3, 85, 107);
     }
 }
 

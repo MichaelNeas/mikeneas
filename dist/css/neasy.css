@@ -57,6 +57,9 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
+.blue-text {
+  color: #007de7; }
+
 /*Text Animations*/
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn {
@@ -322,6 +325,30 @@ nav {
   overflow: hidden;
   z-index: 3; }
 
+.story-beginnings {
+  background-image: url("../../assets/images/bluesaybrook.jpg");
+  position: relative;
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  overflow: hidden;
+  z-index: 3; }
+
+.story-middles {
+  background-image: url("../../assets/images/saltfresh.jpg");
+  position: relative;
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  overflow: hidden;
+  z-index: 3; }
+
 .header-logo {
   text-align: center;
   color: white;
@@ -335,7 +362,7 @@ nav {
   margin-left: -320px; }
 
 .content {
-  padding: 100px 0;
+  padding: 10px 0;
   text-align: center;
   margin: auto;
   margin-bottom: 400px;
@@ -345,16 +372,30 @@ nav {
   width: 100%; }
 
 .window {
+  background-position: top center;
   height: 640px;
   max-width: 640px;
   margin: 0 auto;
-  background-image: url("../../assets/images/nojumping.jpg");
-  background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   border-radius: 50%;
-  margin-top: 100px; }
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-image: url("../../assets/images/nojumping.jpg"); }
+
+.window-fly {
+  background-position: bottom center;
+  height: 640px;
+  max-width: 640px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-image: url("../../assets/me/dragonfly.jpg"); }
 
 .story-time {
   max-width: 640px;
@@ -375,19 +416,19 @@ nav {
   .broken-button .left-button {
     visibility: hidden;
     width: 50%;
-    background: IndianRed;
+    background: #056c8b;
     height: 100%;
     border-radius: 5px 0px 0px 5px; }
   .broken-button .right-button {
     visibility: hidden;
     width: 50%;
-    background: IndianRed;
+    background: #056c8b;
     height: 100%;
     border-radius: 0px 5px 5px 0px; }
 
 .bouncy-button, .download-button {
   text-align: center;
-  background: IndianRed;
+  background: #056c8b;
   width: 120px;
   padding: 25px;
   color: white;
@@ -400,7 +441,7 @@ nav {
   border-radius: 5px; }
   .bouncy-button:hover, .download-button:hover {
     cursor: pointer;
-    background-color: #b85252; }
+    background-color: #03556b; }
 
 .download-button {
   visibility: hidden; }
@@ -492,7 +533,7 @@ footer {
   font-size: 20px;
   height: auto;
   z-index: 1;
-  max-width: 640px;
+  max-width: 800px;
   margin: 0 auto; }
 
 @media all and (max-width: 600px) {
