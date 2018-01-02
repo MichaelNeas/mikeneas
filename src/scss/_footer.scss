@@ -1,10 +1,16 @@
 footer{
     background-color:black;
     color: white;
-    padding: 30px 0;
+    padding: 15px 0;
     position: fixed;
     bottom: 0;
     width: 100%;  
+    svg{
+        transition: color .5s;
+        &:hover{
+            color: #056c8b;
+        }
+    }
 }
 .infoFooter{
     text-align: center;
