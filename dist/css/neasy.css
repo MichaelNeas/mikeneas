@@ -527,9 +527,10 @@ footer {
   bottom: 0;
   width: 100%; }
   footer svg {
-    transition: color .5s; }
+    transition: all .5s; }
     footer svg:hover {
-      color: #056c8b; }
+      color: #056c8b;
+      transform: rotate(1turn); }
 
 .infoFooter {
   text-align: center;

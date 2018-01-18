@@ -6,9 +6,10 @@ footer{
     bottom: 0;
     width: 100%;  
     svg{
-        transition: color .5s;
+        transition: all .5s;
         &:hover{
             color: #056c8b;
+            transform: rotate(1turn);
         }
     }
 }
