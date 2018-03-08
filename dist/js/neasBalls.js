@@ -3,20 +3,20 @@ function clickME() {
     let rightHalf = document.querySelector(".right-button");
     let leftHalf = document.querySelector(".left-button");
     let ballDroppy = document.querySelector("#ballDropper");
-    let download = document.querySelector(".download-button");
-    let thankYou = document.querySelector(".thanks");
+    //let download = document.querySelector(".download-button");
+    //let thankYou = document.querySelector(".thanks");
     buttoon.addEventListener("click", () => {
         buttoon.classList.add("animation");
         rightHalf.classList.add("right-button-animation");
         leftHalf.classList.add("left-button-animation");
         ballDroppy.classList.add("appearance-animation");
         go();
-        download.classList.add("appearance-animation");
+        //download.classList.add("appearance-animation");
     });
-    download.addEventListener("click", () => {
-        download.style.display = "none";
-        thankYou.classList.add("appearance-animation");
-    });
+    // download.addEventListener("click", () => {
+    //     download.style.display = "none";
+    //     thankYou.classList.add("appearance-animation");
+    // });
 
     let ballDropper = document.querySelector("#ballDropper");
     let ballContext = ballDropper.getContext("2d");
