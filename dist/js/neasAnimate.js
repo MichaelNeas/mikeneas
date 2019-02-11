@@ -61,9 +61,6 @@ function setBackground(fragmentId) {
         let m = Math.floor(diff / 60);
         diff = diff - m * 60;
         let s = diff;
-        if (window.location.hash === '#home') {
-            document.getElementById("time-elapsed").innerHTML = `<h4>${d} days, ${h} hour(s), ${m} minute(s), ${s} second(s) spent alive?</h4>`;
-        }
     }
 
     setInterval(updateClock, 1000);
