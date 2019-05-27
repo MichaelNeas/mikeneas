@@ -458,6 +458,11 @@ nav {
   margin-bottom: 30px;
   background-image: url("../../assets/images/nojumping.jpg");
 }
+@media all and (max-width: 600px) {
+  .window {
+    background-attachment: inherit;
+  }
+}
 
 .window-fly {
   background-position: bottom center;
@@ -471,6 +476,11 @@ nav {
   margin-top: 30px;
   margin-bottom: 30px;
   background-image: url("../../assets/me/dragonfly.jpg");
+}
+@media all and (max-width: 600px) {
+  .window-fly {
+    background-attachment: inherit;
+  }
 }
 
 .story-time {
@@ -678,6 +688,10 @@ footer svg:hover {
 @media all and (min-width: 600px) and (max-width: 1050px) {
   .header-logo {
     font-size: 4em;
+  }
+
+  header {
+    height: 6em;
   }
 }
 
