@@ -447,6 +447,7 @@ nav {
 
 .window {
   background-position: top center;
+  background-size: cover;
   height: 640px;
   max-width: 640px;
   margin: 0 auto;

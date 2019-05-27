@@ -69,6 +69,7 @@
 
 .window{
     background-position: top center;
+    background-size: cover;
     @include window-template;
     background-image: url("../../assets/images/nojumping.jpg");
 }
