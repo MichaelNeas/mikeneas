@@ -9,11 +9,11 @@
         let mainContent = document.getElementById("mainContent");
         //remove hash tag
         fragmentId = location.hash.substr(1);
+        if (fragmentId === "") fragmentId = 'home'
         //passing callback function for async calls
-        getContent(fragmentId, function(content){
+        getContent(fragmentId, content => {
             mainContent.innerHTML = content;
-            if(fragmentId === 'contact')
-                clickME();
+            if(fragmentId === 'contact') clickME();
         });
         pageManipulations(fragmentId);
     }
@@ -23,7 +23,7 @@
             callback(loadedPageCache[fragmentId]);
         else {
             let path = "pages/" + fragmentId + ".html";
-            fetchFile(path, function (content){
+            fetchFile(path, content => {
                 loadedPageCache[fragmentId] = content;
                 callback(content);
             });
@@ -34,19 +34,16 @@
         //ajax request
         let request = new XMLHttpRequest();
         //callback with content from file
-        request.onload = function(){
-            callback(request.responseText);
-        }
+        request.onload = () => callback(request.responseText);
+
         //fetch partial html
         request.open("GET", path);
         request.send(null);
     }
 
-
     function pageManipulations(fragid){
-        
-        setActiveLink(fragmentId);
-        setBackground(fragmentId);
+        setActiveLink(fragid);
+        setBackground(fragid);
     }
 
     function setActiveLink(fragmentId){
@@ -60,14 +57,11 @@
                 link.setAttribute("id", "activeButton");
             else
                 link.removeAttribute("id");
-            
         }
     }
 
     //if no location hash, send em home
-    if(!location.hash){
-        location.hash = "#home";
-    }
+    if(!location.hash) location.hash = "#home";
 
     //initial hash
     navigation();

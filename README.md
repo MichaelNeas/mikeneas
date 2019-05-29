@@ -9,3 +9,7 @@ My site of things!
 #### scss -> css
 
 ```sass --watch src/scss/:dist/css/```
+
+#### Babel js -> dist js
+
+```npm run build```
