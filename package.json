@@ -17,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/MichaelNeas/mikeneas/issues"
   },
-  "homepage": "https://www.mikeneas.com",
-  "devDependencies": {
-    "babel-cli": "^6.26.0"
-  }
+  "homepage": "https://www.mikeneas.com"
 }
