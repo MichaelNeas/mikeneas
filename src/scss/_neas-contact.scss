@@ -1,13 +1,14 @@
 $button-color: rgb(5, 108, 139);
 
 @mixin brokenButtons {
-    visibility:hidden;
+    visibility: hidden;
     width:50%;
     background: $button-color;
     height:100%;
 }
 
 .broken-button{
+    opacity: 1;
     height: 74px;
     width: 170px;
     position: absolute;
@@ -19,6 +20,8 @@ $button-color: rgb(5, 108, 139);
     color: white;
     padding:25px;
     display: flex;
+    opacity: 1;
+    visibility: visible;
     .left-button{
         @include brokenButtons;
         border-radius: 5px 0px 0px 5px;
@@ -97,7 +100,7 @@ $button-color: rgb(5, 108, 139);
     }
     to {
         visibility:visible;
-        transform: rotate(-45deg) translateX(500px);
+        transform: rotate(-45deg) translateX(1000px);
     }
 }
 
@@ -108,7 +111,7 @@ $button-color: rgb(5, 108, 139);
     }
     to {
         visibility:visible;
-        transform: rotate(45deg) translateX(-500px);
+        transform: rotate(45deg) translateX(-1000px);
     }
 }
 
