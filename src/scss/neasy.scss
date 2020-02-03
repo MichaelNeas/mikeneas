@@ -57,10 +57,15 @@ h3 {
     color: #000;
     font-family: Walkway, Arial, Helvetica, sans-serif;
     font-size: 2em;
+    background: white;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding-top: 36px;
+    padding-bottom: 36px;
 }
 
 h4 {
-    color: #000;
+    color: whitesmoke;
     font-family: 'Inconsolata', monospace;
     font-size: 1.3em;
     font-weight: normal;
@@ -75,6 +80,15 @@ a {
 
 .blue-text{
     color: #007de7;
+}
+
+.comment-text{
+    color: rgb(143, 143, 143);
+}
+
+.keyword {
+    color: #62afff;
+    font-weight: bold;
 }
 
 pre {

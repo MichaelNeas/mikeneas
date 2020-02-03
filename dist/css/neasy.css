@@ -58,10 +58,15 @@ h3 {
   color: #000;
   font-family: Walkway, Arial, Helvetica, sans-serif;
   font-size: 2em;
+  background: white;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 h4 {
-  color: #000;
+  color: whitesmoke;
   font-family: "Inconsolata", monospace;
   font-size: 1.3em;
   font-weight: normal;
@@ -76,6 +81,15 @@ a {
 
 .blue-text {
   color: #007de7;
+}
+
+.comment-text {
+  color: #8f8f8f;
+}
+
+.keyword {
+  color: #62afff;
+  font-weight: bold;
 }
 
 pre {
@@ -467,7 +481,7 @@ nav {
   margin-bottom: 400px;
   z-index: 2;
   position: relative;
-  background: white;
+  background: #2a2d36;
   width: 100%;
 }
 
@@ -711,6 +725,12 @@ footer svg:hover {
 
   h2 {
     font-size: 1.25em;
+  }
+
+  pre {
+    font-size: 0.9em;
+    padding-left: 4px;
+    padding-right: 4px;
   }
 }
 @media all and (min-width: 600px) and (max-width: 1050px) {

@@ -9,142 +9,144 @@
 	<h3>That rock is rotating around its axis at ~1000 miles per hour to give us 24 hours in a single day!</h3>
 	<hr>
 	<div class="window"></div>
+	<hr>
 	<h3>How have I been spending my time?</h3>
+	<hr>
 	<div class="story-time">
 		<img class="full-width" src="../assets/me/skimmin.jpg" alt="skimmin picture from hs">
 		<pre><h4>
-	init() {
-		self.location = "New England"
+	<span class="keyword">init</span>() {
+		<span class="keyword">self</span>.location = "New England"
 	}
 		</h4></pre>
 	</div>
 	<section class="story-beginnings"></section>
 	<div class="story-time">
 		<pre><h4>
-while inHighSchool {
-  self.activeInSports = true
-  self.workedMultipleJob = true
-  let classes = [.chipmunkBasic, .webDev, .engineering]
-  self.favoriteTeachers.introduced(classes)
-  self.skills += classes
+<span class="keyword">while</span> inHighSchool {
+  <span class="keyword">self</span>.activeInSports = <span class="keyword">true</span>
+  <span class="keyword">self</span>.workedMultipleJob = <span class="keyword">true</span>
+  <span class="keyword">let</span> classes = [.chipmunkBasic, .webDev, .engineering]
+  <span class="keyword">self</span>.favoriteTeachers.introduced(classes)
+  <span class="keyword">self</span>.skills += classes
   money += time * minimumWage
-  if money >= Apple.macbook.cost && self.computer == Compaq {
-	self.computer = Apple.buy(.macbook, quantity: 1)
+  <span class="keyword">if</span> money >= Apple.macbook.cost && <span class="keyword">self</span>.computer == Compaq {
+	<span class="keyword">self</span>.computer = Apple.buy(.macbook, quantity: 1)
   }
-  if time.year == 2011 {
-	self.graduate().then { diploma in
-	  inHighSchool = false
-	  self.school = MassachusettsMaritimeAcademy(diploma)
-	  self.school.sailAroundSouthAmerica()
-	  self.school.playCollegiateLacrosse()
+  <span class="keyword">if</span> time.year == 2011 {
+	<span class="keyword">self</span>.graduate().then { diploma <span class="keyword">in</span>
+	  inHighSchool = <span class="keyword">false</span>
+	  <span class="keyword">self</span>.school = MassachusettsMaritimeAcademy(diploma)
+	  <span class="keyword">self</span>.school.sailAroundSouthAmerica()
+	  <span class="keyword">self</span>.school.playCollegiateLacrosse()
 	}
   }
 }
 		</h4></pre>
 		<img class="full-width" src="../assets/me/combined-me.png" alt="combo pic of mike neas">
 		<pre><h4>
-while atMaritimeAcademy {
-  self.learnFromRegimentedLifestyle()
-  self.realizedTruePassion()
-  self.school = UniversityOfConnecticut.transfer()
+<span class="keyword">while</span> atMaritimeAcademy {
+  <span class="keyword">self</span>.learnFromRegimentedLifestyle()
+  <span class="keyword">self</span>.realizedTruePassion()
+  <span class="keyword">self</span>.school = UniversityOfConnecticut.transfer()
 }
 		</h4></pre>
 	</div>
 	<section class="story-middles"></section>
 	<div class="story-time">
 		<pre><h4>
-repeat {
-  UCONN.applyToEngineeringSchool().then { approval in
+<span class="keyword">repeat</span> {
+  UCONN.applyToEngineeringSchool().then { approval <span class="keyword">in</span>
 	UCONN.enroll(with: approval)
-	self.graduationDate = time.year + 4
-	self.fieldOfStudy = "Computer Science &amp; Engineering"
-  }.catch { error in
-	self.buildAndLearn(from: error)
-	self.continuePersistentEffort()
-  	self.effortLevel = Int.max
-  	self.desireToImprove *= 1_000
+	<span class="keyword">self</span>.graduationDate = time.year + 4
+	<span class="keyword">self</span>.fieldOfStudy = "Computer Science &amp; Engineering"
+  }.catch { error <span class="keyword">in</span>
+	<span class="keyword">self</span>.buildAndLearn(from: error)
+	<span class="keyword">self</span>.continuePersistentEffort()
+  	<span class="keyword">self</span>.effortLevel = Int.max
+  	<span class="keyword">self</span>.desireToImprove *= 1_000
   }
-} while !enrolledInEngineeringProgram
+} <span class="keyword">while</span> !enrolledInEngineeringProgram
 		</h4></pre>
 		<div class="window-fly"></div>
 		<pre><h4>
-while inCollege {
+<span class="keyword"><span class="keyword">while</span></span> inCollege {
   for lesson in countlessTrialsAndTribulations {
-    self.learn(from: lesson)
-    self.grow(from: lesson)
+    <span class="keyword">self</span>.learn(from: lesson)
+    <span class="keyword">self</span>.grow(from: lesson)
   }
-  self.closestFriends.accomplishImpossible = {
-    let buildHydra = {
-	  unfunded = true
-	  muscle&AndroidControlled = true
-	  3DPrinted = true
-	  prostheticArm = true
+  <span class="keyword">self</span>.closestFriends.accomplishImpossible = {
+    <span class="keyword">let</span> buildHydra = {
+	  unfunded = <span class="keyword">true</span>
+	  muscle&AndroidControlled = <span class="keyword">true</span>
+	  3DPrinted = <span class="keyword">true</span>
+	  prostheticArm = <span class="keyword">true</span>
     }
-    return winSeniorDesign(buildHydra)
+    <span class="keyword">return</span> winSeniorDesign(buildHydra)
   }
 }
-self.graduate().then { diploma
-  // Bachelors of Science in Computer Science and Engineering
+<span class="keyword">self</span>.graduate().then { diploma
+  <span class="comment-text">// Bachelors of Science in Computer Science and Engineering</span>
   print(diploma)
-  self.getAJob(diploma)
+  <span class="keyword">self</span>.getAJob(diploma)
 }
 		</h4></pre>
 		<img class="full-width" src="../assets/me/uconn-team.jpg" alt="uconn hydra senior design project">
 
 		<pre><h4>
-self.job = .financialCompany
-self.moveTo(.northCarolina)
-let tasks = [.internalTooling, .webDev, .leadership, .teach]
-self.job.tasks = tasks
-self.skills.append(tasks)
+<span class="keyword">self</span>.job = .financialCompany
+<span class="keyword">self</span>.moveTo(.northCarolina)
+<span class="keyword">let</span> tasks = [.internalTooling, .webDev, .leadership, .teach]
+<span class="keyword">self</span>.job.tasks = tasks
+<span class="keyword">self</span>.skills.append(tasks)
 		</h4></pre>
 		<img class="full-width" src="../assets/images/mitchell.jpg" alt="mt mitchell in north carolina">
 
 		<pre><h4>
-if time.season == .winter && self.offeredNewJob {
-  self.job = .multinationalConglomerate
-  self.moveTo(.rhodeIsland)
-  let tasks = [.node, .python, .php, .swift, .aws, .docker]
-  self.job.tasks = tasks
-  self.skills.append(tasks)
+<span class="keyword">if</span> time.season == .winter && <span class="keyword">self</span>.offeredNewJob {
+  <span class="keyword">self</span>.job = .multinationalConglomerate
+  <span class="keyword">self</span>.moveTo(.rhodeIsland)
+  <span class="keyword">let</span> tasks = [.node, .python, .php, .swift, .aws, .docker]
+  <span class="keyword">self</span>.job.tasks = tasks
+  <span class="keyword">self</span>.skills.append(tasks)
 }
 		</h4></pre>
 		<img class="full-width" src="../assets/images/pvd.jpg" alt="pvd">
 
 		<pre><h4>
-self.hobby = .IoT
-if newJob == self.hobby && self.offeredNewJob {
-  self.job = .homeAutomationStartUp
-  self.expandKnowledge(on: .swift)
-  self.favoriteLanguage = .swift
-  let tasks = [.swift, .objectiveC, .cpp]
-  self.job.tasks = tasks
-  self.skills.append(tasks)
-  pow(self.passionForProgramming, 64)
+<span class="keyword">self</span>.hobby = .IoT
+<span class="keyword">if</span> newJob == <span class="keyword">self</span>.hobby && <span class="keyword">self</span>.offeredNewJob {
+  <span class="keyword">self</span>.job = .homeAutomationStartUp
+  <span class="keyword">self</span>.expandKnowledge(on: .swift)
+  <span class="keyword">self</span>.favoriteLanguage = .swift
+  <span class="keyword">let</span> tasks = [.swift, .objectiveC, .cpp]
+  <span class="keyword">self</span>.job.tasks = tasks
+  <span class="keyword">self</span>.skills.append(tasks)
+  pow(<span class="keyword">self</span>.passionForProgramming, 64)
 }
 		</h4></pre>
 
 		<img class="full-width" src="../assets/images/cclight.jpg" alt="lighthouse">
 
 		<pre><h4>
-if opportunityPresentsItself {
-  self.job = .startupAgency
-  self.moveTo(.Boston)
-  self.job.tasks = [.swift, .javaScript]
-  self.job.icon = 🚀
-  self.givePresentations()
-  self.teachOthers()
-  self.goToMeetups()
+<span class="keyword">if</span> opportunityPresentsItself {
+  <span class="keyword">self</span>.job = .startupAgency
+  <span class="keyword">self</span>.moveTo(.Boston)
+  <span class="keyword">self</span>.job.tasks = [.swift, .javaScript]
+  <span class="keyword">self</span>.job.icon = 🚀
+  <span class="keyword">self</span>.givePresentations()
+  <span class="keyword">self</span>.teachOthers()
+  <span class="keyword">self</span>.goToMeetups()
 } 
 		</h4></pre>
-
 		<img src="../assets/me/mecircle.png" alt="mike neas current picture">
-
-		<h3 style="text-align: left;font-size: 1.5em;">
-			An abundance of weird and nondeterministic events lead me where I am today and I truly could not be happier.<br>
-			As the Earth continues to revolve, so will my desire to teach, grow, and learn.<br>
-			I'm excited to find out what new code I'll be writing in my future!
-		</h3>
 	</div>
+	<hr>
+	<h3 style="font-size: 1.5em;">
+		An abundance of weird and nondeterministic events lead me where I am today and I truly could not be happier.<br>
+		As the Earth continues to revolve, so will my desire to teach, grow, and learn.<br>
+		I'm excited to find out what new code I'll be writing in my future!
+	</h3>
+	<hr>
 	<section class="trailer-image"></section>
 </section>

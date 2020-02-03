@@ -19,6 +19,11 @@
     h2{
         font-size: 1.25em;
     }
+    pre {
+        font-size: 0.9em;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
 }    
 @media all and (min-width: 600px) and (max-width:1050px) {
     .header-logo {
