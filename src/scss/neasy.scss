@@ -10,6 +10,10 @@ body{
     margin:  0;
 }
 
+.backgroundStyle {
+    background: #2a2d36;
+}
+
 /*Typefaces*/
 @import 'https://fonts.googleapis.com/css?family=Inconsolata';
 
@@ -72,8 +76,12 @@ h4 {
     text-align: left;
 }
 
+hr {
+    color: whitesmoke;
+}
+
 a {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
     cursor: pointer;
 }
@@ -87,8 +95,27 @@ a {
 }
 
 .keyword {
-    color: #62afff;
+    color: #69b2ff;
     font-weight: bold;
+}
+
+.func {
+    color: #8fe683;
+}
+
+.enum {
+    color: #82ecec;
+}
+.string {
+    color: #ffde92;
+}
+
+.number {
+    color: #ffde92;
+}
+
+.sysClass {
+    color: #d6afff;
 }
 
 pre {
