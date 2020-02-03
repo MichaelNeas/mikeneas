@@ -9,68 +9,142 @@
 	<h3>That rock is rotating around its axis at ~1000 miles per hour to give us 24 hours in a single day!</h3>
 	<hr>
 	<div class="window"></div>
-	<h4>How have I been spending my time?</h4>
+	<h3>How have I been spending my time?</h3>
 	<div class="story-time">
 		<img class="full-width" src="../assets/me/skimmin.jpg" alt="skimmin picture from hs">
-		<h4>I grew up in a shoreline town in New England</h4>
+		<pre><h4>
+	init() {
+		self.location = "New England"
+	}
+		</h4></pre>
 	</div>
 	<section class="story-beginnings"></section>
 	<div class="story-time">
-		<h4>In high school I was regularly involved sports and always kept myself busy working various jobs.<br>
-			My favorite teachers introduced me to Chipmunk Basic, web programming, and a variety of Engineering disciplines.<br>
-			I saved up all my money to buy the 2009 15" Macbook Pro and kissed my Compaq Computer goodbye.<br>
-			I graduated and shipped out to Massachusetts Maritime Academy, sailed around South America, and played collegiate lacrosse.<br>
-		</h4>
+		<pre><h4>
+while inHighSchool {
+  self.activeInSports = true
+  self.workedMultipleJob = true
+  let classes = [.chipmunkBasic, .webDev, .engineering]
+  self.favoriteTeachers.introduced(classes)
+  self.skills += classes
+  money += time * minimumWage
+  if money >= Apple.macbook.cost && self.computer == Compaq {
+	self.computer = Apple.buy(.macbook, quantity: 1)
+  }
+  if time.year == 2011 {
+	self.graduate().then { diploma in
+	  inHighSchool = false
+	  self.school = MassachusettsMaritimeAcademy(diploma)
+	  self.school.sailAroundSouthAmerica()
+	  self.school.playCollegiateLacrosse()
+	}
+  }
+}
+		</h4></pre>
 		<img class="full-width" src="../assets/me/combined-me.png" alt="combo pic of mike neas">
-
-		<h4>
-			I took life lessons from the regimented lifestyle, paired them with my desire to become more dedicated to computers, and transferred to The University of Connecticut.
-		</h4>
+		<pre><h4>
+while atMaritimeAcademy {
+  self.learnFromRegimentedLifestyle()
+  self.realizedTruePassion()
+  self.school = UniversityOfConnecticut.transfer()
+}
+		</h4></pre>
 	</div>
 	<section class="story-middles"></section>
 	<div class="story-time">
-		<h4>
-			Through relentless persistence, hard work, and desire to improve, I qualified for the Computer Science &amp; Engineering program, set to graduate in 2016.
-		</h4>
+		<pre><h4>
+repeat {
+  UCONN.applyToEngineeringSchool().then { approval in
+	UCONN.enroll(with: approval)
+	self.graduationDate = time.year + 4
+	self.fieldOfStudy = "Computer Science &amp; Engineering"
+  }.catch { error in
+	self.buildAndLearn(from: error)
+	self.continuePersistentEffort()
+  	self.effortLevel = Int.max
+  	self.desireToImprove *= 1_000
+  }
+} while !enrolledInEngineeringProgram
+		</h4></pre>
 		<div class="window-fly"></div>
-		<h4>
-			Countless trials and tribulations later,
-			my closest friends and I took gold in UCONN's Senior Design with an unfunded, muscle &amp; android controlled, 3D printed prosthetic arm, named Hydra.<br>
-			I successfully graduated with a Bachelors of Science in Computer Science and Engineering. 
-		</h4>
+		<pre><h4>
+while inCollege {
+  for lesson in countlessTrialsAndTribulations {
+    self.learn(from: lesson)
+    self.grow(from: lesson)
+  }
+  self.closestFriends.accomplishImpossible = {
+    let buildHydra = {
+	  unfunded = true
+	  muscle&AndroidControlled = true
+	  3DPrinted = true
+	  prostheticArm = true
+    }
+    return winSeniorDesign(buildHydra)
+  }
+}
+self.graduate().then { diploma
+  // Bachelors of Science in Computer Science and Engineering
+  print(diploma)
+  self.getAJob(diploma)
+}
+		</h4></pre>
 		<img class="full-width" src="../assets/me/uconn-team.jpg" alt="uconn hydra senior design project">
 
-		<h4>
-			Shortly after, I moved to North Carolina to begin working for a financial company on internal tooling web software.
-		</h4>
+		<pre><h4>
+self.job = .financialCompany
+self.moveTo(.northCarolina)
+let tasks = [.internalTooling, .webDev, .leadership, .teach]
+self.job.tasks = tasks
+self.skills.append(tasks)
+		</h4></pre>
 		<img class="full-width" src="../assets/images/mitchell.jpg" alt="mt mitchell in north carolina">
 
-		<h4>
-			That winter, I migrated back to New England and continued my passion for Software Engineering.<br>
-			I worked for a much larger company and found myself context switching between different Node.JS, Python, and PHP projects.
-		</h4>
+		<pre><h4>
+if time.season == .winter && self.offeredNewJob {
+  self.job = .multinationalConglomerate
+  self.moveTo(.rhodeIsland)
+  let tasks = [.node, .python, .php, .swift, .aws, .docker]
+  self.job.tasks = tasks
+  self.skills.append(tasks)
+}
+		</h4></pre>
 		<img class="full-width" src="../assets/images/pvd.jpg" alt="pvd">
 
-		<h4>
-			A new oportunity induced and my IoT hobbies became my primary focus!<br>
-			Here I became obsessed with the Swift programming language.<br>
-			I utilized Objective C and <i>some</i> C/C++, but the capabilities of Swift enabled me to take my passion for programming to the next level.
-		</h4>
+		<pre><h4>
+self.hobby = .IoT
+if newJob == self.hobby && self.offeredNewJob {
+  self.job = .homeAutomationStartUp
+  self.expandKnowledge(on: .swift)
+  self.favoriteLanguage = .swift
+  let tasks = [.swift, .objectiveC, .cpp]
+  self.job.tasks = tasks
+  self.skills.append(tasks)
+  pow(self.passionForProgramming, 64)
+}
+		</h4></pre>
 
 		<img class="full-width" src="../assets/images/cclight.jpg" alt="lighthouse">
 
-		<h4>
-			Another fork in the road presented itself and I headed up to Boston.<br>
-			Today I find myself working for a truly amazing tight knit agency, developing quality apps at expeditious velocities. 🚀
-		</h4>
+		<pre><h4>
+if opportunityPresentsItself {
+  self.job = .startupAgency
+  self.moveTo(.Boston)
+  self.job.tasks = [.swift, .javaScript]
+  self.job.icon = 🚀
+  self.givePresentations()
+  self.teachOthers()
+  self.goToMeetups()
+} 
+		</h4></pre>
 
 		<img src="../assets/me/mecircle.png" alt="mike neas current picture">
 
-		<h4>
+		<h3 style="text-align: left;font-size: 1.5em;">
 			An abundance of weird and nondeterministic events lead me where I am today and I truly could not be happier.<br>
 			As the Earth continues to revolve, so will my desire to teach, grow, and learn.<br>
-			I'm excited to find out what happens next!
-		</h4>
+			I'm excited to find out what new code I'll be writing in my future!
+		</h3>
 	</div>
 	<section class="trailer-image"></section>
 </section>

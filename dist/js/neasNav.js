@@ -64,4 +64,6 @@
     navigation();
 
     window.addEventListener("hashchange", navigation);
+
+    console.log("Thanks for checking out my website :)")
 })();

@@ -1,5 +1,5 @@
 /*neasy.scss generates neasy.css*/
-@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Inconsolata';
 body {
   background-repeat: no-repeat;
   -moz-background-size: cover;
@@ -23,16 +23,21 @@ body {
   src: url("../../assets/Walkway/Walkway_UltraBold.ttf");
 }
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inconsolata", monospace;
   color: #75afec;
   font-weight: 100;
 }
 
 li {
   list-style: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inconsolata", monospace;
   color: #000000;
   font-weight: 100;
+}
+
+code {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.1em;
 }
 
 h1 {
@@ -57,8 +62,10 @@ h3 {
 
 h4 {
   color: #000;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-family: "Inconsolata", monospace;
   font-size: 1.3em;
+  font-weight: normal;
+  text-align: left;
 }
 
 a {
@@ -69,6 +76,25 @@ a {
 
 .blue-text {
   color: #007de7;
+}
+
+pre {
+  white-space: -moz-pre-wrap;
+  /* Mozilla, supported since 1999 */
+  white-space: -pre-wrap;
+  /* Opera */
+  white-space: -o-pre-wrap;
+  /* Opera */
+  white-space: pre-wrap;
+  /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+  word-wrap: break-word;
+  /* IE 5.5+ */
+  -moz-tab-size: 4;
+  /* Firefox 4+ */
+  -o-tab-size: 4;
+  /* Opera 11.5 & 12.1 only */
+  tab-size: 4;
+  /* Chrome 21+, Safari 6.1+, Opera 15+ */
 }
 
 /*Text Animations*/
@@ -495,7 +521,7 @@ nav {
   left: 50%;
   top: 30%;
   transform: translateX(-50%) translateY(-50%);
-  font-family: Roboto;
+  font-family: "Inconsolata", monospace;
   font-size: 1.25em;
   color: white;
   padding: 25px;
@@ -524,7 +550,7 @@ nav {
   width: 120px;
   padding: 25px;
   color: white;
-  font-family: Roboto;
+  font-family: "Inconsolata", monospace;
   font-size: 1.25em;
   position: absolute;
   left: 50%;
