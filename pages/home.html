@@ -29,11 +29,11 @@
   <span class="keyword">let</span> classes = [.<span class="enum">chipmunkBasic</span>, .<span class="enum">webDev</span>, .<span class="enum">engineering</span>]
   <span class="keyword">self</span>.favoriteTeachers.<span class="func">introduced</span>(classes)
   <span class="keyword">self</span>.skills <span class="sysClass">+=</span> classes
-  money <span class="sysClass">+=</span> time <span class="sysClass">*</span> minimumWage
-  <span class="keyword">if</span> money <span class="sysClass">>=</span> <span class="sysClass">Apple</span>.macbook.cost <span class="sysClass">&&</span> <span class="keyword">self</span>.computer <span class="sysClass">==</span> Compaq {
+  <span class="keyword">self</span>.money <span class="sysClass">+=</span> <span class="sysClass">Time</span>.hour <span class="sysClass">*</span> minimumWage
+  <span class="keyword">if</span> money <span class="sysClass">>=</span> <span class="sysClass">Apple</span>.macbook.cost <span class="sysClass">&&</span> computer <span class="sysClass">==</span> <span class="enum">.compaq</span> {
 	<span class="keyword">self</span>.computer = <span class="sysClass">Apple</span>.<span class="func">buy</span>(.<span class="enum">macbook</span>, quantity: <span class="number">1</span>)
   }
-  <span class="keyword">if</span> time.year <span class="sysClass">==</span> <span class="number">2011</span> {
+  <span class="keyword">if</span> <span class="sysClass">Time</span>.year <span class="sysClass">==</span> <span class="number">2011</span> {
 	<span class="keyword">self</span>.<span class="func">graduate</span>().<span class="func">then</span> { diploma <span class="keyword">in</span>
 	  inHighSchool = <span class="keyword">false</span>
 	  <span class="keyword">self</span>.school = <span class="sysClass">MassachusettsMaritimeAcademy</span>(diploma)
@@ -58,12 +58,12 @@
 <span class="keyword">repeat</span> {
   <span class="sysClass">UCONN</span>.<span class="func">applyToEngineeringSchool</span>().<span class="func">then</span> { approval <span class="keyword">in</span>
   	<span class="sysClass">UCONN</span>.<span class="func">enroll</span>(with: approval)
-	<span class="keyword">self</span>.graduationDate = time.year <span class="sysClass">+</span> <span class="number">4</span>
+	<span class="keyword">self</span>.graduationDate = <span class="sysClass">Time</span>.year <span class="sysClass">+</span> <span class="number">4</span>
 	<span class="keyword">self</span>.fieldOfStudy = <span class="string">"Computer Science &amp; Engineering"</span>
   }.<span class="func">catch</span> { error <span class="keyword">in</span>
 	<span class="keyword">self</span>.<span class="func">buildAndLearn</span>(from: error)
 	<span class="keyword">self</span>.<span class="func">continuePersistentEffort</span>()
-  	<span class="keyword">self</span>.effortLevel = Int.max
+  	<span class="keyword">self</span>.effortLevel = <span class="sysClass">Int</span>.max
   	<span class="keyword">self</span>.desireToImprove <span class="sysClass">*=</span> <span class="number">1_000</span>
   }
 } <span class="keyword">while</span> <span class="sysClass">!</span>enrolledInEngineeringProgram
@@ -103,7 +103,7 @@
 		<img class="full-width" src="../assets/images/hiking.jpg" alt="hiking">
 
 		<pre><h4>
-<span class="keyword">if</span> time.season <span class="sysClass">==</span> .<span class="enum">winter</span> && <span class="keyword">self</span>.offeredNewJob {
+<span class="keyword">if</span> <span class="sysClass">Time</span>.season <span class="sysClass">==</span> .<span class="enum">winter</span> {
   <span class="keyword">self</span>.job = .<span class="enum">multinationalConglomerate</span>
   <span class="keyword">self</span>.<span class="func">moveTo</span>(.<span class="enum">rhodeIsland</span>)
   <span class="keyword">let</span> tasks = [.<span class="enum">node</span>, .<span class="enum">python</span>, .<span class="enum">php</span>, .<span class="enum">swift</span>, .<span class="enum">aws</span>, .<span class="enum">docker</span>]
@@ -115,7 +115,7 @@
 
 		<pre><h4>
 <span class="keyword">self</span>.hobby = .<span class="enum">IoT</span>
-<span class="keyword">if</span> newJob <span class="sysClass">==</span> <span class="keyword">self</span>.hobby && <span class="keyword">self</span>.offeredNewJob {
+<span class="keyword">if</span> newJob <span class="sysClass">==</span> <span class="keyword">self</span>.hobby {
   <span class="keyword">self</span>.job = .<span class="enum">homeAutomationStartUp</span>
   <span class="keyword">self</span>.<span class="func">expandKnowledge</span>(on: .<span class="enum">swift</span>)
   <span class="keyword">self</span>.favoriteLanguage = .<span class="enum">swift</span>

@@ -96,16 +96,15 @@ a {
 }
 
 .keyword {
-  color: #69b2ff;
-  font-weight: bold;
+  color: #90c6ff;
 }
 
 .func {
-  color: #8fe683;
+  color: #b6fdac;
 }
 
 .enum {
-  color: #82ecec;
+  color: #b7fdfd;
 }
 
 .string {
@@ -753,6 +752,10 @@ footer svg:hover {
 
   h2 {
     font-size: 1.25em;
+  }
+
+  h3 {
+    font-size: 1.1em;
   }
 
   pre {
