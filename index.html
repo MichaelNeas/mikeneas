@@ -17,7 +17,7 @@
 	<script src="https://use.fontawesome.com/releases/v5.6.0/js/brands.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.6.0/js/fontawesome.js"></script>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="dist/css/neasy.css?v={random number/string}">
+	<link rel="stylesheet" href="dist/css/neasy.css">
 </head>
 <body class="backgroundStyle" id="landingBackground">
 	<header>
@@ -41,5 +41,19 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function() {
+				navigator.serviceWorker.register('dist/js/sw.js').then(function(registration) {
+				// Registration was successful
+				console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				}, function(err) {
+				// registration failed :(
+				console.log('ServiceWorker registration failed: ', err);
+				});
+			});
+		}
+	</script>
 </body>
 </html>
