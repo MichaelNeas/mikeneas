@@ -1,6 +1,6 @@
-# mikeneas.com
+# michaelneas.com
 
-My site of things!
+A little something about me
 
 ##### Local Server
 
