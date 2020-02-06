@@ -70,9 +70,12 @@ h3 {
 }
 
 h4 {
+  background: #131313;
+  border-radius: 8px;
+  padding-left: 12px;
   color: whitesmoke;
   font-family: "Inconsolata", monospace;
-  font-size: 1.3em;
+  font-size: 1.25em;
   font-weight: normal;
   text-align: left;
 }
@@ -184,6 +187,7 @@ pre {
 }
 
 .full-width {
+  border: 2px solid whitesmoke;
   width: 100%;
 }
 
@@ -755,6 +759,10 @@ footer svg:hover {
   }
 
   h3 {
+    font-size: 1.1em;
+  }
+
+  h4 {
     font-size: 1.1em;
   }
 
