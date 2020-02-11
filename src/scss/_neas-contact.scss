@@ -1,10 +1,11 @@
-$button-color: rgb(5, 108, 139);
+$button-color: #131313;
 
 @mixin brokenButtons {
     visibility: hidden;
     width:50%;
     background: $button-color;
     height:100%;
+    border: 2px solid #f0fbfd;
 }
 
 .broken-button{
@@ -23,20 +24,19 @@ $button-color: rgb(5, 108, 139);
     visibility: visible;
     .left-button{
         @include brokenButtons;
-        border-radius: 5px 0px 0px 5px;
     }
     .right-button{
         @include brokenButtons;
-        border-radius: 0px 5px 5px 0px;
     }
 }
 
 @mixin buttonStyles{
+    border: 2px solid #f0fbfd;
     text-align: center;
     background: $button-color;
     width: 120px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
     color: white;
     font-family: 'Inconsolata', monospace;
     font-size: 1.25em;
@@ -44,10 +44,9 @@ $button-color: rgb(5, 108, 139);
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    border-radius: 5px;
     &:hover{
         cursor: pointer;
-        background-color: rgb(3, 85, 107);
+        background-color: whitesmoke;
     }
 }
 

@@ -16,7 +16,7 @@
 		<img class="full-width" src="../assets/me/skimmin.jpg" alt="skimmin picture from hs">
 		<pre><h4>
 	<span class="keyword">init</span>() {
-	  <span class="keyword">self</span>.location = <span class="string">"New England"</span>
+	  location = <span class="string">"New England"</span>
 	}
 		</h4></pre>
 	</div>
@@ -24,21 +24,21 @@
 	<div class="story-time">
 		<pre><h4>
 <span class="keyword">while</span> inHighSchool {
-  <span class="keyword">self</span>.activeInSports = <span class="keyword">true</span>
-  <span class="keyword">self</span>.workedMultipleJob = <span class="keyword">true</span>
+  activeInSports = <span class="keyword">true</span>
+  workedMultipleJob = <span class="keyword">true</span>
   <span class="keyword">let</span> classes = [.<span class="enum">chipmunkBasic</span>, .<span class="enum">webDev</span>, .<span class="enum">engineering</span>]
-  <span class="keyword">self</span>.favoriteTeachers.<span class="func">introduced</span>(classes)
-  <span class="keyword">self</span>.skills <span class="sysClass">+=</span> classes
-  <span class="keyword">self</span>.money <span class="sysClass">+=</span> <span class="sysClass">Time</span>.hour <span class="sysClass">*</span> minimumWage
+  favoriteTeachers.<span class="func">introduced</span>(classes)
+  skills <span class="sysClass">+=</span> classes
+  money <span class="sysClass">+=</span> <span class="sysClass">Time</span>.hour <span class="sysClass">*</span> minimumWage
   <span class="keyword">if</span> money <span class="sysClass">>=</span> <span class="sysClass">Apple</span>.macbook.cost <span class="sysClass">&&</span> computer <span class="sysClass">==</span> <span class="enum">.compaq</span> {
-	<span class="keyword">self</span>.computer = <span class="sysClass">Apple</span>.<span class="func">buy</span>(.<span class="enum">macbook</span>, quantity: <span class="number">1</span>)
+	computer = <span class="sysClass">Apple</span>.<span class="func">buy</span>(.<span class="enum">macbook</span>, quantity: <span class="number">1</span>)
   }
   <span class="keyword">if</span> <span class="sysClass">Time</span>.year <span class="sysClass">==</span> <span class="number">2011</span> {
-	<span class="keyword">self</span>.<span class="func">graduate</span>().<span class="func">then</span> { diploma <span class="keyword">in</span>
+	<span class="func">graduate</span>().<span class="func">then</span> { diploma <span class="keyword">in</span>
 	  inHighSchool = <span class="keyword">false</span>
-	  <span class="keyword">self</span>.school = <span class="sysClass">MassMaritimeAcademy</span>(diploma)
-	  <span class="keyword">self</span>.school.<span class="func">sailAroundSouthAmerica</span>()
-	  <span class="keyword">self</span>.school.<span class="func">playCollegiateLacrosse</span>()
+	  school = <span class="sysClass">MassMaritimeAcademy</span>(diploma)
+	  school.<span class="func">sailAroundSouthAmerica</span>()
+	  school.<span class="func">playCollegiateLacrosse</span>()
 	}
   }
 }
@@ -46,9 +46,9 @@
 		<img class="full-width" src="../assets/me/combined-me.png" alt="combo pic of mike neas">
 		<pre><h4>
 <span class="keyword">while</span> atMaritimeAcademy {
-  <span class="keyword">self</span>.<span class="func">learnFromRegimentedLifestyle</span>()
-  <span class="keyword">self</span>.<span class="func">realizedTruePassion</span>()
-  <span class="keyword">self</span>.school = <span class="sysClass">UCONN</span>.<span class="func">transfer</span>()
+  <span class="func">learnFromRegimentedLifestyle</span>()
+  <span class="func">realizedTruePassion</span>()
+  school = <span class="sysClass">UCONN</span>.<span class="func">transfer</span>()
 }
 		</h4></pre>
 	</div>
@@ -58,13 +58,13 @@
 <span class="keyword">repeat</span> {
   <span class="sysClass">UCONN</span>.<span class="func">applyToEngineeringSchool</span>().<span class="func">then</span> { approval <span class="keyword">in</span>
   	<span class="sysClass">UCONN</span>.<span class="func">enroll</span>(with: approval)
-	<span class="keyword">self</span>.graduationDate = <span class="sysClass">Time</span>.year <span class="sysClass">+</span> <span class="number">4</span>
-	<span class="keyword">self</span>.fieldOfStudy = <span class="string">"Computer Science &amp; Engineering"</span>
+	graduationDate = <span class="sysClass">Time</span>.year <span class="sysClass">+</span> <span class="number">4</span>
+	fieldOfStudy = <span class="string">"Computer Science &amp; Engineering"</span>
   }.<span class="func">catch</span> { error <span class="keyword">in</span>
-	<span class="keyword">self</span>.<span class="func">buildAndLearn</span>(from: error)
-	<span class="keyword">self</span>.<span class="func">continuePersistentEffort</span>()
-  	<span class="keyword">self</span>.effortLevel = <span class="sysClass">Int</span>.max
-  	<span class="keyword">self</span>.desireToImprove <span class="sysClass">*=</span> <span class="number">1_000</span>
+	<span class="func">buildAndLearn</span>(from: error)
+	<span class="func">continuePersistentEffort</span>()
+  	effortLevel = <span class="sysClass">Int</span>.max
+  	desireToImprove <span class="sysClass">*=</span> <span class="number">1_000</span>
   }
 } <span class="keyword">while</span> <span class="sysClass">!</span>enrolledInEngineeringProgram
 		</h4></pre>
@@ -72,10 +72,10 @@
 		<pre><h4>
 <span class="keyword">while</span> inCollege {
   <span class="keyword">for</span> lesson <span class="keyword">in</span> countlessTrialsAndTribulations {
-  	<span class="keyword">self</span>.<span class="func">learn</span>(from: lesson)
-    <span class="keyword">self</span>.<span class="func">grow</span>(from: lesson)
+  	<span class="func">learn</span>(from: lesson)
+    <span class="func">grow</span>(from: lesson)
   }
-  <span class="keyword">self</span>.closestFriends.accomplishImpossible = {
+  closestFriends.accomplishImpossible = {
     <span class="keyword">let</span> buildHydra = {
 	  <span class="keyword">return</span> unfunded <span class="sysClass">&&</span>
 		muscle&AndroidControlled <span class="sysClass">&&</span>
@@ -85,44 +85,44 @@
     <span class="keyword">return</span> <span class="func">winSeniorDesign</span>(buildHydra)
   }
 }
-<span class="comment-text">// Bachelors of Science in Computer Science and Engineering</span>
-<span class="keyword">self</span>.<span class="func">graduate</span>().<span class="func">then</span> { diploma <span class="keyword">in</span>
+<span class="comment-text">// BS in Computer Science and Engineering</span>
+<span class="func">graduate</span>().<span class="func">then</span> { diploma <span class="keyword">in</span>
   <span class="func">print</span>(diploma)
-  <span class="keyword">self</span>.<span class="func">beginCareer</span>(with: diploma)
+  <span class="func">beginCareer</span>(with: diploma)
 }
 		</h4></pre>
 		<img class="full-width" src="../assets/me/uconn-team.jpg" alt="uconn hydra senior design project">
 
 		<pre><h4>
-<span class="keyword">self</span>.job = .<span class="enum">financialCompany</span>
-<span class="keyword">self</span>.<span class="func">move</span>(to: .<span class="enum">northCarolina</span>)
-<span class="keyword">let</span> tasks = [.<span class="enum">internalTooling</span>, .<span class="enum">webDev</span>, .<span class="enum">leadership</span>, .<span class="enum">teach</span>]
-<span class="keyword">self</span>.job.tasks = tasks
-<span class="keyword">self</span>.skills.<span class="func">append</span>(tasks)
+job = .<span class="enum">financialCompany</span>
+<span class="func">move</span>(to: .<span class="enum">northCarolina</span>)
+<span class="keyword">let</span> tasks = [.<span class="enum">internalTooling</span>, .<span class="enum">webDev</span>, .<span class="enum">leadership</span>]
+job.tasks = tasks
+skills.<span class="func">append</span>(tasks)
 		</h4></pre>
 		<img class="full-width" src="../assets/images/hiking.jpg" alt="hiking">
 
 		<pre><h4>
 <span class="keyword">if</span> <span class="sysClass">Time</span>.season <span class="sysClass">==</span> .<span class="enum">winter</span> {
-  <span class="keyword">self</span>.job = .<span class="enum">multinationalConglomerate</span>
-  <span class="keyword">self</span>.<span class="func">move</span>(to: .<span class="enum">rhodeIsland</span>)
-  <span class="keyword">let</span> tasks = [.<span class="enum">node</span>, .<span class="enum">python</span>, .<span class="enum">php</span>, .<span class="enum">swift</span>, .<span class="enum">aws</span>, .<span class="enum">docker</span>]
-  <span class="keyword">self</span>.job.tasks = tasks
-  <span class="keyword">self</span>.skills.<span class="func">append</span>(tasks)
+  job = .<span class="enum">multinationalConglomerate</span>
+  <span class="func">move</span>(to: .<span class="enum">rhodeIsland</span>)
+  <span class="keyword">let</span> tasks = [.<span class="enum">node</span>, .<span class="enum">python</span>, .<span class="enum">swift</span>, .<span class="enum">aws</span>, .<span class="enum">docker</span>]
+  job.tasks = tasks
+  skills.<span class="func">append</span>(tasks)
 }
 		</h4></pre>
 		<img class="full-width" src="../assets/images/pvd.jpg" alt="pvd">
 
 		<pre><h4>
-<span class="keyword">self</span>.hobby = .<span class="enum">IoT</span>
-<span class="keyword">if</span> newJob <span class="sysClass">==</span> <span class="keyword">self</span>.hobby {
-  <span class="keyword">self</span>.job = .<span class="enum">homeAutomationStartUp</span>
-  <span class="keyword">self</span>.<span class="func">expandKnowledge</span>(on: .<span class="enum">swift</span>)
-  <span class="keyword">self</span>.favoriteLanguage = .<span class="enum">swift</span>
+hobby = .<span class="enum">IoT</span>
+<span class="keyword">if</span> newJob <span class="sysClass">==</span> hobby {
+  job = .<span class="enum">homeAutomationStartUp</span>
+  <span class="func">expandKnowledge</span>(on: .<span class="enum">swift</span>)
+  favoriteLanguage = .<span class="enum">swift</span>
   <span class="keyword">let</span> tasks = [.<span class="enum">swift</span>, .<span class="enum">objectiveC</span>, .<span class="enum">cpp</span>]
-  <span class="keyword">self</span>.job.tasks = tasks
-  <span class="keyword">self</span>.skills.<span class="func">append</span>(tasks)
-  <span class="func">pow</span>(<span class="keyword">self</span>.passionForProgramming, <span class="number">64</span>)
+  job.tasks = tasks
+  skills.<span class="func">append</span>(tasks)
+  <span class="func">pow</span>(passionForProgramming, <span class="number">64</span>)
 }
 		</h4></pre>
 
@@ -130,13 +130,13 @@
 
 		<pre><h4>
 <span class="keyword">if</span> opportunityPresentsItself {
-  <span class="keyword">self</span>.job = .<span class="enum">startupAgency</span>
-  <span class="keyword">self</span>.<span class="func">move</span>(to: .<span class="enum">boston</span>)
-  <span class="keyword">self</span>.job.tasks = [.<span class="enum">swift</span>, .<span class="enum">javaScript</span>]
-  <span class="keyword">self</span>.job.icon = 🚀
-  <span class="keyword">self</span>.<span class="func">givePresentations</span>()
-  <span class="keyword">self</span>.<span class="func">teachOthers</span>()
-  <span class="keyword">self</span>.<span class="func">goToMeetups</span>()
+  job = .<span class="enum">startupAgency</span>
+  <span class="func">move</span>(to: .<span class="enum">boston</span>)
+  job.tasks = [.<span class="enum">swift</span>, .<span class="enum">javaScript</span>]
+  job.icon = 🚀
+  <span class="func">givePresentations</span>()
+  <span class="func">teachOthers</span>()
+  <span class="func">goToMeetups</span>()
 } 
 		</h4></pre>
 		<img src="../assets/me/mecircle.png" alt="mike neas current picture">

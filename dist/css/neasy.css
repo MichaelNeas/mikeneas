@@ -187,7 +187,6 @@ pre {
 }
 
 .full-width {
-  border: 2px solid whitesmoke;
   width: 100%;
 }
 
@@ -263,7 +262,7 @@ nav {
 
 .navbutton-animation {
   background-size: 210%;
-  background-color: black;
+  background-color: #131313;
   -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
   transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
   color: #f0fbfd;
@@ -576,24 +575,25 @@ nav {
 .broken-button .left-button {
   visibility: hidden;
   width: 50%;
-  background: #056c8b;
+  background: #131313;
   height: 100%;
-  border-radius: 5px 0px 0px 5px;
+  border: 2px solid #f0fbfd;
 }
 .broken-button .right-button {
   visibility: hidden;
   width: 50%;
-  background: #056c8b;
+  background: #131313;
   height: 100%;
-  border-radius: 0px 5px 5px 0px;
+  border: 2px solid #f0fbfd;
 }
 
 .bouncy-button, .download-button {
+  border: 2px solid #f0fbfd;
   text-align: center;
-  background: #056c8b;
+  background: #131313;
   width: 120px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
   color: white;
   font-family: "Inconsolata", monospace;
   font-size: 1.25em;
@@ -601,11 +601,10 @@ nav {
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  border-radius: 5px;
 }
 .bouncy-button:hover, .download-button:hover {
   cursor: pointer;
-  background-color: #03556b;
+  background-color: whitesmoke;
 }
 
 .download-button {
