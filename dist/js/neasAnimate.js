@@ -1,6 +1,3 @@
-/* neasAnimate.js
-*  Animations and styling
-*/
 function displayInformation(aye) {
   console.log(aye);
   aye.height *= 1.5;
@@ -15,7 +12,6 @@ function displayInformation(aye) {
 }
 
 function setBackground(fragmentId) {
-  //console.log(fragmentId);
   switch (fragmentId) {
     case 'life':
       document.body.id = 'fitnessBackground';
@@ -45,8 +41,7 @@ function setBackground(fragmentId) {
       document.querySelector('.header-logo').style.transform = 'translate(0px, ' + windowScroll / 4 + '%)';
     }
   });
-  const startDateTime = new Date(1993, 3, 21, 4, 42, 52, 0); // YYYY (M-1) D H m s ms (start time and date from DB)
-
+  const startDateTime = new Date(1993, 3, 21, 4, 42, 52, 0);
   const startStamp = startDateTime.getTime();
   let newDate = new Date();
   let newStamp = newDate.getTime();

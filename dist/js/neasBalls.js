@@ -2,24 +2,14 @@ function clickME() {
   let buttoon = document.querySelector(".bouncy-button");
   let rightHalf = document.querySelector(".right-button");
   let leftHalf = document.querySelector(".left-button");
-  let ballDroppy = document.querySelector("#ballDropper"); 
-  //let download = document.querySelector(".download-button");
-  //let thankYou = document.querySelector(".thanks");
-
+  let ballDroppy = document.querySelector("#ballDropper");
   buttoon.addEventListener("click", () => {
     buttoon.classList.add("animation");
     rightHalf.classList.add("right-button-animation");
     leftHalf.classList.add("left-button-animation");
     ballDroppy.classList.add("appearance-animation");
-    go(); 
-    //download.classList.add("appearance-animation");
-  }); 
-  
-  // download.addEventListener("click", () => {
-  //     download.style.display = "none";
-  //     thankYou.classList.add("appearance-animation");
-  // });
-
+    go();
+  });
   let ballDropper = document.querySelector("#ballDropper");
   let ballContext = ballDropper.getContext("2d");
   let totalBalls = 20;
@@ -30,8 +20,7 @@ function clickME() {
 
   let random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
-
-  let clearcanvas = () => ballContext.clearRect(0, 0, w, h); //unless you want to release the slugs
+  let clearcanvas = () => ballContext.clearRect(0, 0, w, h);
 
   let distanceNextFrame = (a, b) => Math.sqrt((a.x + a.vx - b.x - b.vx) ** 2 + (a.y + a.vy - b.y - b.vy) ** 2) - a.r - b.r;
 

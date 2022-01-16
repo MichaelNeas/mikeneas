@@ -1,16 +1,10 @@
-/* neasNav.js
-*  Navigation and image loading 
-*/
 (function () {
   let loadedPageCache = {};
 
   function navigation() {
     let mainContent = document.getElementById("mainContent");
-
-    //remove hash tag
     fragmentId = location.hash.substr(1);
-    if (fragmentId === "") fragmentId = 'home'; 
-    
+    if (fragmentId === "") fragmentId = 'home';
     getContent(fragmentId, content => {
       mainContent.innerHTML = content;
       if (fragmentId === 'contact') clickME();
@@ -30,12 +24,10 @@
 
   function fetchFile(path, callback) {
     let request = new XMLHttpRequest();
-    
-    //callback with content from file
+
     request.onload = () => callback(request.responseText);
 
-
-    request.open("GET", path); //fetch partial html
+    request.open("GET", path);
     request.send(null);
   }
 
@@ -58,9 +50,7 @@
     }
   }
 
-  //if no location hash, send em home
-  if (!location.hash) location.hash = "#home"; 
-
-  navigation(); //initial hash
+  if (!location.hash) location.hash = "#home";
+  navigation();
   window.addEventListener("hashchange", navigation);
 })();
